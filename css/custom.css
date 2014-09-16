@@ -1,8 +1,46 @@
 .navbar {
-	background-color: black;
+	background-color: rgba(0,0,0,.26);
 }
 
 .nav > li {
 position: relative;
 display: inline-block;
+}
+
+.nav > li > a {
+padding: 2em 1em;
+}
+
+.navbar {
+border-radius: 0px;
+}
+
+a {
+color: #CA4242;
+}
+
+a:hover {
+color: #FA0A1D;
+}
+
+h3.sam{
+	color:#CA4242;
+
+}
+
+div.my-name{
+	padding-left: 1.5em;
+
+}
+
+.container-narrow {
+margin: 0 auto;
+max-width: 700px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Corben', Georgia, Times, serif;
+}
+p, div {
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
 }
