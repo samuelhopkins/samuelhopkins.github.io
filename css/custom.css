@@ -1,5 +1,5 @@
 .navbar {
-	background-color: rgba(0,0,0,.26);
+	background-color: rgba(238, 230, 230, 0.05);
 }
 
 .nav > li {
@@ -16,15 +16,24 @@ border-radius: 0px;
 }
 
 a {
-color: #CA4242;
+color: #4289CA;
 }
 
+p{
+	color:white;
+}
+
+}
 a:hover {
-color: #FA0A1D;
+color: #636CA7;
 }
 
-h3.sam{
-	color:#CA4242;
+.nav> li> a:active{
+background-color: #F7F8FC;
+}
+
+h2.sam{
+	color:#4289CA;
 
 }
 
@@ -36,11 +45,21 @@ div.my-name{
 .container-narrow {
 margin: 0 auto;
 max-width: 700px;
+background: url(/img/binding_dark.png) repeat 0 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Corben', Georgia, Times, serif;
 }
+
 p, div {
     font-family: 'Nobile', Helvetica, Arial, sans-serif;
 }
+
+div.home-content{
+	padding-left: 1em;
+}
+
+
+
+

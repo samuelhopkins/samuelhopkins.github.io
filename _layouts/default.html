@@ -10,7 +10,8 @@
 	<!-- Styles -->
 	<link href="/css/bootstrap.css" rel="stylesheet">
 	<link href="/css/custom.css" rel="stylesheet">
-
+	<link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+ 	<link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
 		<div class="navbar-inner">
 
 			<div class="my-name">
-		<muted><h3 class="sam pull-left">Sam Hopkins</h3></muted>
+		<muted><h2 class="sam pull-left">Sam Hopkins</h2></muted>
 	</div>
 		<ul class="nav navbar-masthead pull-right">
 			<li><a href="/index.html">Home</a></li>
@@ -34,6 +35,11 @@
 	</div>
 </div>
 
+<div class="row-fluid marketing">
+         {{ content }}
+</div>
+
+
 <div class="footer">
         <p>&copy; Sam Hopkins, 2014</p>
  </div>
@@ -42,8 +48,14 @@
 <!--Javascript-->
 <!--========================================= -->
 <!--
-<script src=/js/bootstrap.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/jquery.backstretch.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
 -->
+<script type="text/javascript">
+  $.backstretch("/img/santacruz_trees.jpg");
+</script>
 </body>
 
 </html>
