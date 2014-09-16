@@ -1,5 +1,5 @@
 .navbar {
-	background-color: rgba(238, 230, 230, 0.05);
+	background: url(/img/binding_dark.png) repeat 0 0;
 }
 
 .nav > li {
@@ -13,6 +13,7 @@ padding: 2em 1em;
 
 .navbar {
 border-radius: 0px;
+
 }
 
 a {
@@ -34,9 +35,13 @@ background-color: #F7F8FC;
 
 h2.sam{
 	color:#4289CA;
-
 }
 
+h2{
+	color:white;
+}
+
+}
 div.my-name{
 	padding-left: 1.5em;
 
@@ -45,7 +50,15 @@ div.my-name{
 .container-narrow {
 margin: 0 auto;
 max-width: 700px;
-background: url(/img/binding_dark.png) repeat 0 0;
+background: rgba(0,0,0,0);
+}
+
+body {
+  background: url(/img/santacruz_trees.jpg) fixed no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -60,6 +73,25 @@ div.home-content{
 	padding-left: 1em;
 }
 
+body{
+	height:100%;
+	width:100%;
+}
 
+.container-wide,
+.container-wide-body,
+.container-wide-footer{
+	width:100%;
+	height: 50%;
+	background: url(/img/binding_dark.png) repeat 0 0;
+}
 
+.container-wide-body{
+	margin-top: 7em;
+	margin-bottom: 7em;
+}
 
+div.navbar-fixed-bottom{
+	text-align:center;
+	vertical-align: center;
+}
