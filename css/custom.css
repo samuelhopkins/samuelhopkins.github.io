@@ -83,6 +83,7 @@ div.home-content{
 	margin-left: 15%;
 	margin-right: 15%;
 	overflow:scroll;
+	-webkit-overflow-scrolling: touch;
 }
 
 body{
