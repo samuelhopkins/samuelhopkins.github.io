@@ -11,10 +11,17 @@ display: inline-block;
 padding: 2em 1em;
 }
 
+.foot>li{
+	padding: 2em 1em;
+	color: #4289ca;
+}
+
 .navbar {
 border-radius: 0px;
 
 }
+
+
 
 a {
 color: #4289CA;
@@ -48,9 +55,8 @@ div.my-name{
 }
 
 .container-narrow {
-margin: 0 auto;
-max-width: 700px;
-background: rgba(0,0,0,0);
+margin: auto auto;
+max-width: 800px;
 }
 
 body {
@@ -82,16 +88,26 @@ body{
 .container-wide-body,
 .container-wide-footer{
 	width:100%;
-	height: 50%;
 	background: url(/img/binding_dark.png) repeat 0 0;
 }
 
 .container-wide-body{
-	margin-top: 7em;
-	margin-bottom: 7em;
+	margin-top: 25%;
+	margin-bottom: 25%;
 }
+
 
 div.navbar-fixed-bottom{
 	text-align:center;
-	vertical-align: center;
+	max-height:10%;
 }
+
+
+
+
+ 
+
+
+
+
+
