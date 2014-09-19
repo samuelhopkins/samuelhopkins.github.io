@@ -63,7 +63,7 @@ overflow:scroll;
 }
 
 body {
-  background: url(/img/Wisco.jpg) fixed no-repeat;
+  background: url(/img/ThePoint.jpg) fixed no-repeat;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -71,11 +71,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Corben', Georgia, Times, serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 p, div {
-    font-family: 'Nobile', Helvetica, Arial, sans-serif;
+    font-family: 'Stoke', serif;
 }
 
 div.home-content{
