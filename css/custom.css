@@ -88,6 +88,12 @@ div.home-content{
 	-webkit-overflow-scrolling: touch;
 }
 
+div.contact{
+	text-align:center;
+	padding-top: 1em;
+}
+
+
 body{
 	height:100%;
 	width:100%;
