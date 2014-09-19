@@ -64,7 +64,7 @@ overflow:scroll;
 }
 
 body {
-  background: url(/img/ThePoint.jpg) fixed no-repeat;
+  background: url(/img/GoldenGate.jpg) fixed no-repeat;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -125,7 +125,7 @@ div.navbar-fixed-bottom{
 	max-height: 60%;
 	overflow: scroll;
 	position:fixed;
-	padding-bottom: 3em;
+	padding-bottom: 2em;
 }
 
  
