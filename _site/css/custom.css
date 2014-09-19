@@ -63,7 +63,7 @@ overflow:scroll;
 }
 
 body {
-  background: url(/img/santacruz_trees.jpg) fixed no-repeat;
+  background: url(/img/Wisco.jpg) fixed no-repeat;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -100,7 +100,7 @@ body{
 }
 
 .img-top{
-	margin-top: 7em;
+	margin-top: 5em;
 	width:100%;
 	height:7em;
 	background: rgba(0,0,0,0);
@@ -108,7 +108,7 @@ body{
 
 .img-strip{
 	width:100%;
-	margin-bottom:2em;
+	margin-bottom:3em;
 	height:7em;
 	background: rgba(0,0,0,0);
 
@@ -124,6 +124,7 @@ div.navbar-fixed-bottom{
 	max-height: 60%;
 	overflow: scroll;
 	position:fixed;
+	padding-bottom: 3em;
 }
 
  
