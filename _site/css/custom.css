@@ -71,6 +71,15 @@ body {
   background-size: cover;
 }
 
+body.contact {
+  background: url(/img/GoldenGate.jpg) fixed no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Josefin Sans', sans-serif;
 }
