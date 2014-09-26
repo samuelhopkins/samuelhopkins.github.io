@@ -1,6 +1,5 @@
 .navbar {
 	background: url(/img/binding_dark.png) repeat 0 0;
-	margin-bottom: 0;
 }
 
 .nav > li {
@@ -57,14 +56,10 @@ div.my-name{
 
 }
 
-.container-narrow {
-max-width: 100%;
-max-height: 26em;
-overflow:scroll;
-}
+
 
 body {
-  background: url(/img/Wisco.jpg) fixed no-repeat;
+  background: url(/img/GoldenGate.jpg) fixed no-repeat;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -90,16 +85,12 @@ p, div {
 
 div.home-content{
 	position: relative;
-	margin-left: 15%;
-	margin-right: 15%;
-	overflow-y:scroll;
-	overflow-x:hidden;
-	-webkit-overflow-scrolling: touch;
+	
 }
 
 div.contact{
 	text-align:center;
-	padding-top: 1em;
+	margin-top: 5%;
 }
 
 
@@ -116,16 +107,14 @@ body{
 }
 
 .img-top{
-	margin-top: 5em;
-	width:100%;
-	height:7em;
+	margin-top:15%;
+	height:20%;
 	background: rgba(0,0,0,0);
 }
 
-.img-strip{
-	width:100%;
-	margin-bottom:3em;
-	height:7em;
+.img-bottom{
+	margin-bottom:10%;
+	height:15%;
 	background: rgba(0,0,0,0);
 
 }
@@ -137,15 +126,20 @@ div.navbar-fixed-bottom{
 
 
 .container-wide-body{
+	margin-top: 11%;
+	margin-bottom: 17%;
 	max-height: 60%;
-	overflow: scroll;
-	position:fixed;
-	padding-bottom: 2em;
+	position:absolute;
+	overflow-y:scroll; 
+	padding: 1% 20% 5% 20%;
 }
 
- 
-
-
+.container-wide-body::-webkit-scrollbar {
+      width:30px; // manage scrollbar width here
+}
+.container-wide-body::-webkit-scrollbar * {
+      background:transparent; // manage scrollbar background color here
+}
 
 
 
