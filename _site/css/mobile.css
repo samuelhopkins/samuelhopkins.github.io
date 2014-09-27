@@ -41,10 +41,17 @@ p{
 }
 
 
-
+h2.about{
+	color: rgb(172, 87, 87);
+}
 
 .nav> li> a:active{
 background-color: #F7F8FC;
+}
+
+a.index, a.index:hover{
+	color:#1D8EE6;
+	text-decoration: none;
 }
 
 h2.sam{
@@ -137,8 +144,8 @@ div.navbar-fixed-bottom{
 	margin-top: 0%;
 	margin-bottom: 17%;
 	position:absolute;
-	/*overflow-y:scroll; 
-	-webkit-overflow-scrolling: touch;*/
+	overflow-y:scroll; 
+	-webkit-overflow-scrolling: touch;
 	padding: 1% 10% 13% 10%;
 }
 
