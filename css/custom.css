@@ -1,5 +1,5 @@
 .navbar {
-	background: url(/img/binding_dark.png) repeat 0 0;
+	background: url(/img/cream-pixels.png) repeat 0 0;
 }
 
 .nav > li {
@@ -103,7 +103,7 @@ body{
 .container-wide-body,
 .container-wide-footer{
 	width:100%;
-	background: url(/img/binding_dark.png) repeat 0 0;
+	background: url(/img/cream-pixels.png) repeat 0 0;
 }
 
 .img-top{
