@@ -1,5 +1,5 @@
 .navbar {
-	background: url(/img/binding_dark.png) repeat 0 0;
+	background-color: rgba(0,0,0,.49);
 }
 
 .nav > li {
@@ -9,12 +9,17 @@ display: inline-block;
 
 .nav > li > a {
 padding: 1em 1em;
+color: #1D8EE6;
+}
+
+.nav > li > a:active{
+color: #11202C;
 }
 
 .foot>li{
 	padding-top: 1em ;
 	padding-bottom: .5em;
-	color: #4289ca;
+	color: #1D8EE6;
 }
 
 .navbar {
@@ -22,32 +27,32 @@ border-radius: 0px;
 
 }
 
-
+a:hover{
+	color:black;
+}
 
 a {
-color: #4289CA;
+color: #47A6EE;
 }
 
 p{
-	color:white;
+	color:black;
 }
 
-}
-a:hover {
-color: #636CA7;
-}
+
+
 
 .nav> li> a:active{
 background-color: #F7F8FC;
 }
 
 h2.sam{
-	color:#4289CA;
+	color:#1D8EE6;
 	padding-left: 1em;
 }
 
 h2{
-	color:white;
+	color:black;
 }
 
 }
@@ -59,7 +64,7 @@ div.my-name{
 
 
 body {
-  background: url(/img/GoldenGate.jpg) fixed no-repeat;
+  background: url(/img/GoldenGate.JPG) fixed no-repeat;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -67,7 +72,7 @@ body {
 }
 
 body.contact {
-  background: url(/img/GoldenGate.jpg) fixed no-repeat;
+  background: url(/img/GoldenGate.JPG) fixed no-repeat;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -103,7 +108,7 @@ body{
 .container-wide-body,
 .container-wide-footer{
 	width:100%;
-	background: url(/img/binding_dark.png) repeat 0 0;
+	background-color:rgba(255,255,255,.49);
 }
 
 .img-top{
