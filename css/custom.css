@@ -9,7 +9,7 @@ display: inline-block;
 
 .nav > li > a {
 padding: 1em 1em;
-color: #1D8EE6;
+color: #FF022A;
 }
 
 .nav > li > a:active{
@@ -32,7 +32,7 @@ a:hover{
 }
 
 a {
-color: #47A6EE;
+color: #B93B4F;
 }
 
 p{
@@ -81,12 +81,13 @@ body.contact {
 
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Josefin Sans', sans-serif;
+	 font-family: 'Josefin Sans', sans-serif;
 }
 
 p, div {
-    font-family: 'Stoke', serif;
-}
+	font-family: 'Josefin Slab', serif;
+	font-size: 105%;
+   }
 
 div.home-content{
 	position: relative;
@@ -108,7 +109,7 @@ body{
 .container-wide-body,
 .container-wide-footer{
 	width:100%;
-	background-color:rgba(255,255,255,.49);
+	background-color:rgba(255,255,255,.74);
 }
 
 .img-top{
