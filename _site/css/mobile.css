@@ -136,10 +136,10 @@ div.navbar-fixed-bottom{
 .container-wide-body{
 	margin-top: 0%;
 	margin-bottom: 17%;
-	max-height: 90%;
 	position:absolute;
-	overflow-y:scroll; 
-	padding: 1% 10% 5% 10%;
+	/*overflow-y:scroll; 
+	-webkit-overflow-scrolling: touch;*/
+	padding: 1% 10% 13% 10%;
 }
 
 .container-wide-body::-webkit-scrollbar {
