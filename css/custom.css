@@ -59,7 +59,7 @@ div.my-name{
 
 
 body {
-  background: url(/img/GoldenGate.jpg) fixed no-repeat;
+  background: url(/img/GoldenGate.JPG) fixed no-repeat;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -67,7 +67,7 @@ body {
 }
 
 body.contact {
-  background: url(/img/GoldenGate.jpg) fixed no-repeat;
+  background: url(/img/GoldenGate.JPG) fixed no-repeat;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
