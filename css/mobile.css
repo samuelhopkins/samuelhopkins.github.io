@@ -138,6 +138,7 @@ div.navbar-fixed-bottom{
 	margin-bottom: 17%;
 	position:absolute;
 	overflow-y:scroll; 
+	-webkit-overflow-scrolling: touch;
 	padding: 1% 10% 13% 10%;
 }
 
