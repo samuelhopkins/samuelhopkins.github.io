@@ -146,7 +146,7 @@ div.navbar-fixed-bottom{
 	position:absolute;
 	overflow-y:scroll; 
 	-webkit-overflow-scrolling: touch;
-	padding: 1% 10% 13% 10%;
+	padding: 1% 10% 15% 10%;
 }
 
 .container-wide-body::-webkit-scrollbar {
