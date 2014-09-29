@@ -52,6 +52,7 @@ background-color: #F7F8FC;
 a.index, a.index:hover{
 	color:#1D8EE6;
 	text-decoration: none;
+	padding-left: 1em;
 }
 
 h2.sam{
