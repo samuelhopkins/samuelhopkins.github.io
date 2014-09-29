@@ -9,7 +9,7 @@ display: inline-block;
 }
 
 .nav > li > a {
-padding: 1em 1em;
+padding: 1em .7em;
 color:#828486;
 }
 
