@@ -121,9 +121,25 @@ body{
 .container-wide-body,
 .container-wide-footer{
 	width:100%;
-	background-color:rgba(255,255,255,.85);
+	/*background-color:rgba(255,255,255,.85);*/
 }
 
+.container-white-body{
+	background-color: rgba(255,255,255,0.85);
+	margin-top: 11%;
+	margin-bottom: 17%;
+	max-height: 60%;
+	position:absolute;
+	overflow-y:scroll; 
+	padding: 3% 17% 3% 17%;
+}
+
+.container-white-body::-webkit-scrollbar {
+      width:30px; // manage scrollbar width here
+}
+.container-white-body::-webkit-scrollbar * {
+      background:transparent; // manage scrollbar background color here
+}
 .img-top{
 	margin-top:15%;
 	height:20%;
@@ -149,7 +165,7 @@ div.navbar-fixed-bottom{
 	max-height: 60%;
 	position:absolute;
 	overflow-y:scroll; 
-	padding: 3% 17% 5% 17%;
+	padding: 3% 17% 3% 17%;
 }
 
 .container-wide-body::-webkit-scrollbar {
@@ -160,8 +176,8 @@ div.navbar-fixed-bottom{
 }
 
 .img-circle{
-	opacity: 0.3;
-    filter: alpha(opacity=30);
+	opacity: 0.5;
+    filter: alpha(opacity=50);
 	height:30%;
 	width:100%;
 	-webkit-filter: grayscale(100%);

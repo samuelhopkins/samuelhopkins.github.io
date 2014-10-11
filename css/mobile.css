@@ -121,7 +121,7 @@ body{
 .container-wide-body,
 .container-wide-footer{
 	width:100%;
-	background-color:rgba(255,255,255,.80);
+	/*background-color:rgba(255,255,255,.80);*/
 }
 
 
@@ -133,7 +133,7 @@ div.navbar-fixed-bottom{
 
 
 .container-wide-body{
-	margin-top: 0%;
+	margin-top: 15%;
 	margin-bottom: 17%;
 	max-height: 80%;
 	position:absolute;
@@ -146,6 +146,23 @@ div.navbar-fixed-bottom{
       width:30px; // manage scrollbar width here
 }
 .container-wide-body::-webkit-scrollbar * {
+      background:transparent; // manage scrollbar background color here
+}
+
+.container-white-body{
+	background-color: rgba(255,255,255,0.85);
+	margin-top: 0%;
+	margin-bottom: 17%;
+	max-height: 60%;
+	position:absolute;
+	overflow-y:scroll; 
+	padding: 3% 17% 3% 17%;
+}
+
+.container-white-body::-webkit-scrollbar {
+      width:30px; // manage scrollbar width here
+}
+.container-white-body::-webkit-scrollbar * {
       background:transparent; // manage scrollbar background color here
 }
 

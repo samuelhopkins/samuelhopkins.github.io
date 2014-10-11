@@ -37,8 +37,7 @@
 </div>
 
 
-<div class="container-wide-body">
-
+<div ng-app="myApp" ng-controller="cntrl">
          <div class="contact">
 	<p>
 	<a href="mailto:safhopkins@yahoo.com">Email</a>
@@ -78,12 +77,12 @@ var app = angular.module("myApp",[]);
 app.controller("cntrl",function($scope){
 	$scope.myVar=false;
 	$scope.otherVar=false;
-	console.log("heyyyyy");
-	console.log($scope.myVar);
+	$scope.myClass="container-wide-body";
 	$scope.toggle=function(){
 		$scope.myVar=true;
 		$scope.otherVar=$scope.myVar;
-		console.log($scope.myVar);
+		$scope.myClass='container-white-body';
+		console.log($scope.myColor);
 	};
 });
 
