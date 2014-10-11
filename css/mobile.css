@@ -149,6 +149,29 @@ div.navbar-fixed-bottom{
       background:transparent; // manage scrollbar background color here
 }
 
+.img-circle{
+	height:30%;
+	width:100%;
+	-webkit-filter: grayscale(100%);
+	-webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
 
+}
+
+.img-circle:hover{
+	-webkit-filter: grayscale(0%);
+	height:40%;
+	cursor:pointer;
+}
+
+.pic{
+	width:45%;
+	display:block;
+	margin: 0 auto;
+
+}
 
 
