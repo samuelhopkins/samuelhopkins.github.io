@@ -73,7 +73,7 @@ div.my-name{
 
 
 body {
-  background: url(/img/GoldenGate.JPG) fixed no-repeat;
+  background: url(/img/Wisco.jpg) fixed no-repeat;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -81,7 +81,7 @@ body {
 }
 
 body.contact {
-  background: url(/img/GoldenGate.JPG) fixed no-repeat;
+  background: url(/img/Wisco.jpg) fixed no-repeat;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -112,6 +112,11 @@ div.contact{
 	color:#C5264C;
 }
 
+.contact a:hover{
+	color:#1D8EE6;
+
+}
+
 body{
 	height:100%;
 	width:100%;
@@ -127,11 +132,12 @@ body{
 .container-white-body{
 	background-color: rgba(255,255,255,0.85);
 	margin-top: 11%;
-	margin-bottom: 17%;
-	max-height: 60%;
+	margin-bottom: 13%;
+	max-height: 55%;
 	position:absolute;
 	overflow-y:scroll; 
-	padding: 3% 17% 3% 17%;
+	padding: 1% 17% 3% 17%;
+	width:100%;
 }
 
 .container-white-body::-webkit-scrollbar {
@@ -160,8 +166,8 @@ div.navbar-fixed-bottom{
 
 
 .container-wide-body{
-	margin-top: 11%;
-	margin-bottom: 17%;
+	margin-top: 8%;
+	margin-bottom: 11%;
 	max-height: 60%;
 	position:absolute;
 	overflow-y:scroll; 
@@ -175,11 +181,9 @@ div.navbar-fixed-bottom{
       background:transparent; // manage scrollbar background color here
 }
 
-.img-circle{
-	opacity: 0.5;
-    filter: alpha(opacity=50);
-	height:30%;
-	width:100%;
+.hexagon{
+	opacity: 0.6;
+    filter: alpha(opacity=60);
 	-webkit-filter: grayscale(100%);
 	-webkit-transition: all 1s ease;
      -moz-transition: all 1s ease;
@@ -189,11 +193,10 @@ div.navbar-fixed-bottom{
 
 }
 
-.img-circle:hover{
+.hexagon:hover{
 	opacity: 1;
     filter: alpha(opacity=100);
 	-webkit-filter: grayscale(0%);
-	height:40%;
 	cursor:pointer;
 }
 

@@ -10,6 +10,7 @@
 	<!-- Styles -->
 	<link href="/css/bootstrap.css" rel="stylesheet">
 	<link href="/css/custom.css" rel="stylesheet">
+	<link href="/css/hexagon.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
  	<link href="css/mobile.css" rel="stylesheet" type="text/css"
@@ -42,7 +43,10 @@
 <div class="home-content">
 <h3 ng-show="otherVar"class="about">About Me</h3>
 <div ng-hide="myVar" class="pic">
-	<img src="/img/MoosePic.jpg" ng-click="toggle()" class="img-circle" alt="Circular Image">
+	<div class="hexagon" ng-click="toggle()">
+		<div class="hexTop"></div>
+		<div class="hexBottom"></div>
+	</div>
 </div>
 <div ng-show="otherVar" class="about">
 <p> Currently a rising third year at the <a href="http://uchicago.edu">University Of Chicago</a> studying computer science and statistics.

@@ -73,7 +73,7 @@ div.my-name{
 
 
 body {
-  background: url(/img/GoldenGate.JPG) fixed no-repeat;
+  background: url(/img/Wisco.jpg) fixed no-repeat;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -81,7 +81,7 @@ body {
 }
 
 body.contact {
-  background: url(/img/GoldenGate.JPG) fixed no-repeat;
+  background: url(/img/Wisco.jpg) fixed no-repeat;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -153,10 +153,11 @@ div.navbar-fixed-bottom{
 	background-color: rgba(255,255,255,0.85);
 	margin-top: 0%;
 	margin-bottom: 17%;
-	max-height: 60%;
+	max-height: 100%;
 	position:absolute;
 	overflow-y:scroll; 
 	padding: 3% 17% 3% 17%;
+	width:100%;
 }
 
 .container-white-body::-webkit-scrollbar {
@@ -166,9 +167,7 @@ div.navbar-fixed-bottom{
       background:transparent; // manage scrollbar background color here
 }
 
-.img-circle{
-	height:30%;
-	width:100%;
+.hexagon{
 	-webkit-filter: grayscale(100%);
 	-webkit-transition: all 1s ease;
      -moz-transition: all 1s ease;
@@ -178,17 +177,83 @@ div.navbar-fixed-bottom{
 
 }
 
-.img-circle:hover{
+.hexagon:hover{
 	-webkit-filter: grayscale(0%);
 	height:40%;
 	cursor:pointer;
 }
 
 .pic{
-	width:45%;
+	width:40%;
 	display:block;
 	margin: 0 auto;
 
 }
 
+.hexagon {
+  position: relative;
+  width: 150px; 
+  height: 86.60px;
+  margin: 43.30px 0;
+  background-image: url(/img/MoosePic.jpg);
+  background-size: auto 173.2051px;
+  background-position: center;
+}
+
+.hexTop,
+.hexBottom {
+  position: absolute;
+  z-index: 1;
+  width: 106.07px;
+  height: 106.07px;
+  overflow: hidden;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background: inherit;
+  left: 21.97px;
+}
+
+/*counter transform the bg image on the caps*/
+.hexTop:after,
+.hexBottom:after {
+  content: "";
+  position: absolute;
+  width: 150.0000px;
+  height: 86.60254037844388px;
+  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-43.3013px);
+  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-43.3013px);
+  transform:          rotate(45deg) scaleY(1.7321) translateY(-43.3013px);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background: inherit;
+}
+
+.hexTop {
+  top: -53.0330px;
+}
+
+.hexTop:after {
+  background-position: center top;
+}
+
+.hexBottom {
+  bottom: -53.0330px;
+}
+
+.hexBottom:after {
+  background-position: center bottom;
+}
+
+.hexagon:after {
+  content: "";
+  position: absolute;
+  top: 0.0000px;
+  left: 0;
+  width: 150.0000px;
+  height: 86.6025px;
+  z-index: 2;
+  background: inherit;
+}
 
