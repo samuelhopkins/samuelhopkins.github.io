@@ -35,6 +35,8 @@
          <div ng-class="myClass">
 <div class="home-content">
 <h3 ng-show="otherVar"class="about">About Me</h3>
+<ul class="hexes">
+	<li>
 <div ng-hide="myVar" class="pic">
 	<div id="pic" class="hexagon" ng-click="toggle()">
 		ABOUT ME
@@ -42,13 +44,17 @@
 		<div class="face2"></div>
 	</div>
 </div>
-<div ng-hide="myVar" class="phone"><a href="contact.html">
-	<div id="contact" class="hexagon">
+</li>
+<li>
+<div ng-hide="myVar" class="phone">
+	<div id="contact" class="hexagon" ng-click="c_toggle()">
 		CONTACT
 		<div class="face1"></div>
 		<div class="face2"></div>
-	</div></a>
+	</div>
 </div>
+</li>
+<li>
 <div ng-hide="myVar" class="resume"><a href="WebResume.pdf">
 	<div id="resume" class="hexagon">
 		RESUME
@@ -56,12 +62,27 @@
 		<div class="face2"></div>
 	</div></a>
 </div>
-
+</li>
+</ul>
 <div ng-show="otherVar" class="about">
-<p> Currently a rising third year at the <a href="http://uchicago.edu">University Of Chicago</a> studying computer science and statistics.
+<p> 
+	<br>
+	Currently a third year at the <a href="http://uchicago.edu">University Of Chicago</a> studying computer science and statistics.
 	I started programming my first year in college (2012). I have gotten a lot better since then (hopefully you believe me). I enjoy building tools to maximize efficiency in any and all areas of life, and I tend to look towards data to explain what I don't understand. I love being challenged and learning new skills from other people. I hope that one day I can use my knowledge and abilities to help people. Until then, I am actively searching for an opportunity. If you have one <a href="contact.html">let me know.</a>
 
 </p>
+</div>
+<div ng-show="myContact" class="contact">
+	<ul>
+	<li>
+	<a href="mailto:safhopkins@yahoo.com"><i class="fa fa-envelope-o fa-2x"></i></a>
+	</li>
+	<li>
+	<a href="https://github.com/samuelhopkins"><i class="fa fa-github-square fa-2x"></i></a>
+	</li>
+	<li>
+	<a href="https://linkedin.com/pub/sam-hopkins/95/a65/a80"><i class="fa fa-linkedin-square fa-2x"></i></a>
+</li>
 </div>
 </div>
 </div>
@@ -103,6 +124,11 @@ app.controller("cntrl",function($scope){
 		$scope.otherVar=$scope.myVar;
 		$scope.myClass='container-white-body';
 		console.log($scope.myColor);
+	};
+	$scope.c_toggle=function(){
+		$scope.myContact=true;
+		$scope.myVar=$scope.myContact;
+		$scope.myClass='container-white-body';
 	};
 });
 

@@ -42,9 +42,12 @@ p{
 
 h3.about{
 	color: rgb(172, 87, 87);
+	float:left;
 }
 
-
+div.about{
+	text-align: left;
+}
 .nav> li> a:active{
 background-color: #F7F8FC;
 }
@@ -74,6 +77,11 @@ ul{
 	list-style-type: none;
 }
 
+ul.hexes>li{
+	display:inline-block;
+	padding: 0 8%;
+}
+
 li{
 	display:inline-block;
 	padding: 0 3%;
@@ -101,14 +109,11 @@ p, div, li {
 
 div.home-content{
 	position: relative;
-	padding-left:10%;
-	
+	text-align:center;
+	vertical-align: center;
 }
 
-div.contact{
-	text-align:center;
-	margin-top: 5%;
-}
+
 
 .contact a{
 	color:#C5264C;
@@ -168,12 +173,11 @@ div.navbar-fixed-bottom{
 
 
 .container-wide-body{
-	margin-top: 12%;
-	margin-bottom: 11%;
-	max-height: 60%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	height: auto;
 	position:absolute;
 	overflow-y:scroll; 
-	padding: 5% auto;
 }
 
 .container-wide-body::-webkit-scrollbar {
@@ -217,26 +221,20 @@ div.navbar-fixed-bottom{
 }
 
 .pic{
-	float:left;
 	width:150px;
 	display:block;
-	margin: 0 8%;
 	}
 
 
 .phone{
-	float:left;
 	width:150px;
 	display:block;
-	margin: 0 8%;
 
 }
 
 .resume{
-	float:left;
 	width:150px;
 	display:block;
-	margin: 0 8%;
 
 }
 
