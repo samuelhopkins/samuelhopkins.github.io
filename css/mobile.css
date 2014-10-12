@@ -78,20 +78,14 @@ div.my-name{
 
 
 body {
-  background: url(/img/Wisco.jpg) fixed no-repeat;
+  background: url(/img/GoldenGate.JPG) fixed no-repeat;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
 }
 
-body.contact {
-  background: url(/img/Wisco.jpg) fixed no-repeat;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-}
+
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -205,7 +199,7 @@ div.navbar-fixed-bottom{
 }
 
 #resume.hexagon{
-	background-image: url(/img/GoldenGate.JPG);
+	background-image: url(/img/Wisco.jpg);
 }
 
 #contact.hexagon:hover,
