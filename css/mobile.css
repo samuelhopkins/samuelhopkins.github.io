@@ -47,6 +47,11 @@ li{
 	padding: 3% 0;
 }
 
+ul.hexes>li{
+	display:inline-block;
+	padding: 0 3%;
+}
+
 a.index, a.index:hover{
 	color:#1D8EE6;
 	text-decoration: none;
@@ -134,21 +139,26 @@ div.navbar-fixed-bottom{
 	padding: 5% auto;
 }
 
-.container-wide-body::-webkit-scrollbar {
+.container-wide-body::-webkit-scrollbar,
+.container-white-body::-webkit-scrollbar,
+ {
       width:30px; // manage scrollbar width here
 }
-.container-wide-body::-webkit-scrollbar * {
+.container-wide-body::-webkit-scrollbar * ,
+.container-white-body::-webkit-scrollbar * {
       background:transparent; // manage scrollbar background color here
 }
 
 .container-white-body{
 	background-color: rgba(255,255,255,0.85);
-	margin-top: 0%;
-	margin-bottom: 17%;
+	margin-top: 15%;
+	margin-bottom: 19%;
 	max-height: 80%;
 	position:absolute;
 	overflow-y:scroll; 
-	padding: 4% 4% 4% 14%;
+	-webkit-overflow-scrolling: touch;
+	padding: 5% auto;
+	padding-bottom: 7%
 	width:100%;
 }
 
