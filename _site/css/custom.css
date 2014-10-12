@@ -70,7 +70,14 @@ div.my-name{
 
 }
 
+ul{
+	list-style-type: none;
+}
 
+li{
+	display:inline-block;
+	padding: 0 3%;
+}
 
 body {
   background: url(/img/Wisco.jpg) fixed no-repeat;
@@ -100,6 +107,7 @@ p, div, li {
 
 div.home-content{
 	position: relative;
+	padding-left:10%;
 	
 }
 
@@ -171,7 +179,7 @@ div.navbar-fixed-bottom{
 	max-height: 60%;
 	position:absolute;
 	overflow-y:scroll; 
-	padding: 3% 17% 3% 17%;
+	padding: 5% auto;
 }
 
 .container-wide-body::-webkit-scrollbar {
@@ -182,31 +190,81 @@ div.navbar-fixed-bottom{
 }
 
 .hexagon{
-	opacity: 0.6;
-    filter: alpha(opacity=60);
-	-webkit-filter: grayscale(100%);
+	background-image: url(/img/MoosePic.jpg);
 	-webkit-transition: all 1s ease;
      -moz-transition: all 1s ease;
        -o-transition: all 1s ease;
       -ms-transition: all 1s ease;
           transition: all 1s ease;
+      -webkit-filter: saturate(5);
+      filter: saturate(5);
 
 }
 
+#pic.hexagon{
+-webkit-filter: hue-rotate(90deg);
+  filter: hue-rotate(90deg);
+}
+
+#pic.hexagon:hover{
+	-webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+	 -webkit-filter: hue-rotate(0deg);
+  filter: hue-rotate(0deg);
+}
+
+#contact.hexagon{
+  background-image: url(/img/Tahoe.JPG);
+}
+
+#resume.hexagon{
+	background-image: url(/img/GoldenGate.jpg);
+}
+
+#contact.hexagon:hover,
+#resume.hexagon:hover{
+  color: #fff;
+  text-shadow: 0 0 10px white;
+}
+
+
 .hexagon:hover{
-	opacity: 1;
-    filter: alpha(opacity=100);
-	-webkit-filter: grayscale(0%);
+	-webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+	-webkit-filter: saturate(1);
+      filter: saturate(1);
 	cursor:pointer;
 }
 
 .pic{
-	width:45%;
+	float:left;
+	width:150px;
 	display:block;
-	margin: 0 auto;
+	margin: 0 8%;
+	}
+
+
+.phone{
+	float:left;
+	width:150px;
+	display:block;
+	margin: 0 8%;
 
 }
 
+.resume{
+	float:left;
+	width:150px;
+	display:block;
+	margin: 0 8%;
+
+}
 
 
 

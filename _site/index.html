@@ -11,6 +11,7 @@
 	<link href="/css/bootstrap.css" rel="stylesheet">
 	<link href="/css/custom.css" rel="stylesheet">
 	<link href="/css/hexagon.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
  	<link href="css/mobile.css" rel="stylesheet" type="text/css"
@@ -22,14 +23,6 @@
 		<div class="navbar navbar-masthead ">
 		<div class="navbar-inner">
 		
-		<ul class="nav navbar-masthead pull-right">
-			<li><a href="/index.html">Home</a></li>
-			<li class="divider-vertical"></li>
-			<li><a href="#">Posts</a></li>
-			<li><a href="/contact.html">Contact</a>
-			<li><a href="/WebResume.pdf">Resume</a></li>
-
-		</ul>
 		<div class="my-name">
 		<h1 class=" sam pull-left"><a class="index" href="/index.html">Sam Hopkins</a></h1>
 	</div>
@@ -43,11 +36,26 @@
 <div class="home-content">
 <h3 ng-show="otherVar"class="about">About Me</h3>
 <div ng-hide="myVar" class="pic">
-	<div class="hexagon" ng-click="toggle()">
-		<div class="hexTop"></div>
-		<div class="hexBottom"></div>
+	<div id="pic" class="hexagon" ng-click="toggle()">
+		<div class="face1"></div>
+		<div class="face2"></div>
 	</div>
 </div>
+<div ng-hide="myVar" class="phone"><a href="contact.html">
+	<div id="contact" class="hexagon">
+		CONTACT
+		<div class="face1"></div>
+		<div class="face2"></div>
+	</div></a>
+</div>
+<div ng-hide="myVar" class="resume"><a href="WebResume.pdf">
+	<div id="resume" class="hexagon">
+		RESUME
+		<div class="face1"></div>
+		<div class="face2"></div>
+	</div></a>
+</div>
+
 <div ng-show="otherVar" class="about">
 <p> Currently a rising third year at the <a href="http://uchicago.edu">University Of Chicago</a> studying computer science and statistics.
 	I started programming my first year in college (2012). I have gotten a lot better since then (hopefully you believe me). I enjoy building tools to maximize efficiency in any and all areas of life, and I tend to look towards data to explain what I don't understand. I love being challenged and learning new skills from other people. I hope that one day I can use my knowledge and abilities to help people. Until then, I am actively searching for an opportunity. If you have one <a href="contact.html">let me know.</a>
