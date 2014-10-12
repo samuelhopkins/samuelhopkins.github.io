@@ -1,7 +1,38 @@
----
-layout: default
-title: Your New Jekyll Site
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Sam Hopkins</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Styles -->
+	<link href="/css/bootstrap.css" rel="stylesheet">
+	<link href="/css/custom.css" rel="stylesheet">
+	<link href="/css/hexagon.css" rel="stylesheet">
+	<link href="/css/3D.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+ 	<link href="css/mobile.css" rel="stylesheet" type="text/css"
+	media="only screen and (max-width: 600px)" >
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+
+<body>
+	<div ng-app="myApp" ng-controller="cntrl">
+	<div class="container-fluid">
+		<div class="navbar navbar-masthead ">
+		<div class="navbar-inner">
+		
+		<div class="my-name">
+		<h1 class=" sam pull-left" ng-click="i_toggle()"><span data-title="Sam Hopkins">Sam Hopkins</span></h1>
+	</div>
+	</div>
+	
+</div>
+
+
 <div ng-class="myClass">
 <div class="home-content">
 <h3 ng-show="otherVar"class="about">About Me</h3>
@@ -38,7 +69,7 @@ title: Your New Jekyll Site
 <p> 
 	<br>
 	Currently a third year at the <a href="http://uchicago.edu">University Of Chicago</a> studying computer science and statistics.
-	I started programming my first year in college (2012). I have gotten a lot better since then (hopefully you believe me). I enjoy building tools to maximize efficiency in any and all areas of life, and I tend to look towards data to explain what I don't understand. I love being challenged and learning new skills from other people. I hope that one day I can use my knowledge and abilities to help people. Until then, I am actively searching for an opportunity. If you have one <a href="contact.html">let me know.</a>
+	 I enjoy building tools to maximize efficiency in any and all areas of life, and I tend to look towards data to explain what I don't understand. I love being challenged and learning new skills from other people. I hope that one day I can use my knowledge and abilities to help people. Until then, I am actively searching for an opportunity. If you have one <a href="contact.html">let me know.</a>
 
 </p>
 </div>
@@ -56,4 +87,56 @@ title: Your New Jekyll Site
 </div>
 </div>
 </div>
+</div>
+<div class="container-wide foot">
+<div class="navbar navbar-masthead navbar-fixed-bottom">
+	<ul class="nav foot navbar-masthead pull-center">
+			<li> &copy; Sam Hopkins, 2014</li>
+		</ul>
+</div>
+</div>
+</div>
+
+<!-- container -->
+<!--Javascript-->
+<!--========================================= -->
+<!--
+<script type="text/javascript" src="/js/bootstrap.js"></script>
+<!-- Backstretch -->
+<!--
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+<script type="text/javascript" src="/js/jquery.backstretch.js"></script>
+-->
+
+<script>
+
+var app = angular.module("myApp",[]);
+app.controller("cntrl",function($scope){
+	$scope.myVar=false;
+	$scope.otherVar=false;
+	$scope.myClass="container-wide-body";
+	$scope.toggle=function(){
+		$scope.myVar=true;
+		$scope.otherVar=$scope.myVar;
+		$scope.myClass='container-white-body';
+		console.log($scope.myColor);
+	};
+	$scope.c_toggle=function(){
+		$scope.myContact=true;
+		$scope.myVar=$scope.myContact;
+		$scope.myClass='container-white-body';
+	};
+	$scope.i_toggle=function(){
+		$scope.myVar=false;
+		$scope.otherVar=false;
+		$scope.myContact=false;
+		$scope.myClass='container-wide-body'
+	};
+});
+
+	</script>
+
+</body>
+
+</html>
 

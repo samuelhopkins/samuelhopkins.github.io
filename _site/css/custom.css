@@ -2,19 +2,6 @@
 	background-color: white;
 }
 
-.nav > li {
-position: relative;
-display: inline-block;
-}
-
-.nav > li > a {
-padding: 1em 2em;
-color: #828486;
-}
-
-.nav > li > a:active{
-color: #11202C;
-}
 
 .foot>li{
 	padding-top: 1em ;
@@ -22,9 +9,8 @@ color: #11202C;
 	color: #828486;
 }
 
-.navbar {
+.navbar{
 border-radius: 0px;
-
 }
 
 a:hover{
@@ -39,6 +25,7 @@ color: #828486;
 p{
 	color:black;
 }
+
 
 h3.about{
 	color: rgb(172, 87, 87);
@@ -58,9 +45,26 @@ a.index, a.index:hover{
 	padding-left: 1em;
 }
 
-h2.sam{
+h1.sam{
+	-webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
 	color:#1D8EE6;
 	padding-left: 1em;
+}
+
+h1.sam:hover{
+	-webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+    color:#fff;
+	text-shadow: 5px 0 10px black;
+	cursor:pointer;
+ 
 }
 
 h2{
@@ -93,6 +97,7 @@ body {
   -o-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+ 
 }
 
 
@@ -112,7 +117,6 @@ div.home-content{
 	text-align:center;
 	vertical-align: center;
 }
-
 
 
 .contact a{
@@ -176,6 +180,7 @@ div.navbar-fixed-bottom{
 	margin-top: 10%;
 	margin-bottom: 10%;
 	height: auto;
+	max-height: 70%;
 	position:absolute;
 	overflow-y:scroll; 
 }
@@ -215,8 +220,8 @@ div.navbar-fixed-bottom{
        -o-transition: all 1s ease;
       -ms-transition: all 1s ease;
           transition: all 1s ease;
-	-webkit-filter: saturate(2);
-      filter: saturate(2);
+	-webkit-filter: saturate(5);
+      filter: saturate(5);
 	cursor:pointer;
 }
 
@@ -235,8 +240,9 @@ div.navbar-fixed-bottom{
 .resume{
 	width:150px;
 	display:block;
-
 }
+
+
 
 
 

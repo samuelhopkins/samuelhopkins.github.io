@@ -11,6 +11,7 @@
 	<link href="/css/bootstrap.css" rel="stylesheet">
 	<link href="/css/custom.css" rel="stylesheet">
 	<link href="/css/hexagon.css" rel="stylesheet">
+	<link href="/css/3D.css" rel="stylesheet">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
@@ -19,20 +20,20 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
 
 <body>
+	<div ng-app="myApp" ng-controller="cntrl">
 	<div class="container-fluid">
 		<div class="navbar navbar-masthead ">
 		<div class="navbar-inner">
 		
 		<div class="my-name">
-		<h1 class=" sam pull-left"><a class="index" href="/index.html">Sam Hopkins</a></h1>
+		<h1 class=" sam pull-left" ng-click="i_toggle()"><span data-title="Sam Hopkins">Sam Hopkins</span></h1>
 	</div>
 	</div>
 	
 </div>
 
 
-<div ng-app="myApp" ng-controller="cntrl">
-         <div ng-class="myClass">
+<div ng-class="myClass">
 <div class="home-content">
 <h3 ng-show="otherVar"class="about">About Me</h3>
 <ul class="hexes">
@@ -68,7 +69,7 @@
 <p> 
 	<br>
 	Currently a third year at the <a href="http://uchicago.edu">University Of Chicago</a> studying computer science and statistics.
-	I started programming my first year in college (2012). I have gotten a lot better since then (hopefully you believe me). I enjoy building tools to maximize efficiency in any and all areas of life, and I tend to look towards data to explain what I don't understand. I love being challenged and learning new skills from other people. I hope that one day I can use my knowledge and abilities to help people. Until then, I am actively searching for an opportunity. If you have one <a href="contact.html">let me know.</a>
+	 I enjoy building tools to maximize efficiency in any and all areas of life, and I tend to look towards data to explain what I don't understand. I love being challenged and learning new skills from other people. I hope that one day I can use my knowledge and abilities to help people. Until then, I am actively searching for an opportunity. If you have one <a href="contact.html">let me know.</a>
 
 </p>
 </div>
@@ -86,12 +87,7 @@
 </div>
 </div>
 </div>
-
-
-
 </div>
-
-	
 <div class="container-wide foot">
 <div class="navbar navbar-masthead navbar-fixed-bottom">
 	<ul class="nav foot navbar-masthead pull-center">
@@ -130,6 +126,12 @@ app.controller("cntrl",function($scope){
 		$scope.myVar=$scope.myContact;
 		$scope.myClass='container-white-body';
 	};
+	$scope.i_toggle=function(){
+		$scope.myVar=false;
+		$scope.otherVar=false;
+		$scope.myContact=false;
+		$scope.myClass='container-wide-body'
+	};
 });
 
 	</script>
@@ -137,3 +139,4 @@ app.controller("cntrl",function($scope){
 </body>
 
 </html>
+
