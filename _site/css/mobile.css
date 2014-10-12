@@ -8,14 +8,7 @@ position: relative;
 display: inline-block;
 }
 
-.nav > li > a {
-padding: 1em .4em;
-color:#828486;
-}
 
-.nav > li > a:active{
-color: #11202C;
-}
 
 .foot>li{
 	padding-top: 1em ;
@@ -99,7 +92,6 @@ p, div, li {
 
 div.home-content{
 	position: relative;
-	padding-left:22%;
 	
 }
 
@@ -153,10 +145,10 @@ div.navbar-fixed-bottom{
 	background-color: rgba(255,255,255,0.85);
 	margin-top: 0%;
 	margin-bottom: 17%;
-	max-height: 100%;
+	max-height: 80%;
 	position:absolute;
 	overflow-y:scroll; 
-	padding: 0 0 3% 0;
+	padding: 4% 4% 4% 14%;
 	width:100%;
 }
 
@@ -167,32 +159,10 @@ div.navbar-fixed-bottom{
       background:transparent; // manage scrollbar background color here
 }
 
-.hexagon{
-	background-image: url(/img/MoosePic.jpg);
-	-webkit-transition: all 1s ease;
-     -moz-transition: all 1s ease;
-       -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-          transition: all 1s ease;
-      -webkit-filter: saturate(5);
-      filter: saturate(5);
-
-}
-
 #pic.hexagon{
--webkit-filter: hue-rotate(90deg);
-  filter: hue-rotate(90deg);
+	background-image: url(/img/MoosePic.jpg);
 }
 
-#pic.hexagon:hover{
-	-webkit-transition: all 1s ease;
-     -moz-transition: all 1s ease;
-       -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-          transition: all 1s ease;
-	 -webkit-filter: hue-rotate(0deg);
-  filter: hue-rotate(0deg);
-}
 
 #contact.hexagon{
   background-image: url(/img/Tahoe.JPG);
@@ -202,46 +172,53 @@ div.navbar-fixed-bottom{
 	background-image: url(/img/Wisco.jpg);
 }
 
-#contact.hexagon:hover,
-#resume.hexagon:hover{
+.hexagon{
   color: #fff;
   text-shadow: 0 0 10px white;
 }
-
-
 .hexagon:hover{
 	-webkit-transition: all 1s ease;
      -moz-transition: all 1s ease;
        -o-transition: all 1s ease;
       -ms-transition: all 1s ease;
           transition: all 1s ease;
-	-webkit-filter: saturate(1);
-      filter: saturate(1);
+	-webkit-filter: saturate(5);
+      filter: saturate(5);
 	cursor:pointer;
 }
 
 .pic{
-	float:left;
 	width:150px;
 	display:block;
-	margin: 0 12%;
 	}
 
 
 .phone{
-	float:left;
 	width:150px;
 	display:block;
-	margin: 0 12%;
 
 }
 
 .resume{
-	float:left;
 	width:150px;
 	display:block;
-	margin: 0 12%;
+}
 
+.pic{
+	width:150px;
+	display:block;
+	}
+
+
+.phone{
+	width:150px;
+	display:block;
+
+}
+
+.resume{
+	width:150px;
+	display:block;
 }
 
 
