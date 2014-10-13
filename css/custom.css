@@ -13,12 +13,15 @@
 border-radius: 0px;
 }
 
-a:hover{
+a:hover,
+span.contact:hover{
 	color:#1D8EE6;
 	text-decoration: none;
+	cursor:pointer;
 }
 
-a {
+a,
+span.contact {
 color: #828486;
 }
 
