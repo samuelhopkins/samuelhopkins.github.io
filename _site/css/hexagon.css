@@ -18,6 +18,7 @@
   color: rgba(255,255,255,.5);
   cursor: pointer;
   transition: color 500ms ease, text-shadow 500ms ease;
+  box-shadow: 0 0 20px rgba(0,0,0,1);
 }
 
 

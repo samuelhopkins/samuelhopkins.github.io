@@ -218,11 +218,11 @@ div.navbar-fixed-bottom{
 
 
 .hexagon:hover{
-	-webkit-transition: all 1s ease;
-     -moz-transition: all 1s ease;
-       -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-          transition: all 1s ease;
+	-webkit-transition: all .5s ease;
+     -moz-transition: all .5s ease;
+       -o-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+          transition: all .5s ease;
 	-webkit-filter: saturate(5);
       filter: saturate(5);
 	cursor:pointer;
