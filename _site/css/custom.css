@@ -223,8 +223,6 @@ div.navbar-fixed-bottom{
        -o-transition: all .5s ease;
       -ms-transition: all .5s ease;
           transition: all .5s ease;
-	-webkit-filter: saturate(5);
-      filter: saturate(5);
 	cursor:pointer;
 }
 
