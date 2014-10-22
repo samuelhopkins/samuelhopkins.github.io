@@ -35,6 +35,11 @@ h3.about{
 	float:left;
 }
 
+h3.about>i:hover{
+	cursor:pointer;
+	color:#1D8EE6;
+}
+
 div.about{
 	text-align: left;
 }
@@ -121,6 +126,23 @@ div.home-content{
 	vertical-align: center;
 }
 
+div.contact{
+	text-align:center;
+}
+
+}
+.back{
+	width:100%;
+	text-align: center;
+}
+ 
+.back i{
+	color:blue;
+}
+.back i:hover{
+	cursor:pointer;
+	color:red;
+}
 
 .contact a{
 	color:#C5264C;

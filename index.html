@@ -33,7 +33,7 @@
 
 <div ng-class="myClass">
 <div class="home-content">
-<h3 ng-show="otherVar"class="about">About Me</h3>
+<h3 ng-show="otherVar"class="about"><i class="fa fa-arrow-circle-left fa-1x" ng-click="i_toggle()"></i>About Me</h3>
 <ul class="hexes">
 	<li>
 <div ng-hide="myVar" class="pic">
@@ -72,6 +72,9 @@
 </div>
 <div ng-show="myContact" class="contact">
 	<ul>
+		<li>
+			<a href="#"><i class="fa fa-arrow-circle-left fa-2x" ng-click="i_toggle()"></i></a>
+		</li>
 	<li>
 	<a href="mailto:safhopkins@yahoo.com"><i class="fa fa-envelope-o fa-2x"></i></a>
 	</li>
