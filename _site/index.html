@@ -29,6 +29,12 @@ $(window).load(function() {
 	<div ng-app="myApp" ng-controller="cntrl">
 	<div class="container-fluid">
 		<div class="navbar navbar-masthead ">
+			<div class="navbar-inner">
+ 		
+	<div class="my-name">
+		<h1 ng-class="nameClass" ng-click="i_toggle()"><span data-title="Sam Hopkins">Sam Hopkins</span></h1>
+	</div>
+	</div>
 		
 	
 </div>
@@ -69,7 +75,7 @@ $(window).load(function() {
 <div ng-show="otherVar" class="about">
 <p> 
 	<br>
-	Born and raised in the Bay Area. I am currently a third year <a href="http://uchicago.edu">University of Chicago</a> studying computer science and statistics. I am passionate about facing challenges and building tools to maximize efficiency and enjoyment in all areas of life. The tools I us most frequently are Python and Javascript (especially AngularJs) along with HTML and CSS for design. While I have picked up many skills on my own I seriously value input from others, so please do not hesitate to offer advice (particularly concerning this website). I hope to one day use my knowledge and abilities to help people. Until then, I am actively searching for an opportunity to learn and make a difference. If you have such an opportunity and you believe I could contribute, <span class="contact" ng-click="c_toggle()">let me know.</span>
+	Born and raised in the Bay Area. I am currently a third year <a href="http://uchicago.edu">University of Chicago</a> studying computer science and statistics. I am passionate about facing challenges and building tools to maximize efficiency and enjoyment in all areas of life. The tools I us most frequently are Python and Javascript (especially AngularJs) along with HTML and CSS for design. While I have picked up many skills on my own I seriously value input from others, so please do not hesitate to offer advice (particularly concerning this website). I hope to one day use my knowledge and abilities to help people. Until then, I am actively searching for an opportunity to learn and make a difference. If you have such an opportunity and you believe I could contribute, <span class="contact" ng-click="c_toggle()">let me know.</span> As an aside, if you are currently viewing this site with Safari try Chrome for my sake.
 
 </p>
 </div>
@@ -115,21 +121,25 @@ $(window).load(function() {
 
 var app = angular.module("myApp",[]);
 app.controller("cntrl",function($scope){
+	$scope.nameClass="sam pull-left";
 	$scope.myVar=false;
 	$scope.otherVar=false;
 	$scope.myClass="container-wide-body";
 	$scope.toggle=function(){
+		$scope.nameClass="sam pull-r";
 		$scope.myVar=true;
 		$scope.otherVar=$scope.myVar;
 		$scope.myClass='container-white-body';
 		console.log($scope.myColor);
 	};
 	$scope.c_toggle=function(){
+		$scope.nameClass="sam pull-r"
 		$scope.myContact=true;
 		$scope.myVar=$scope.myContact;
 		$scope.myClass='container-white-body';
 	};
 	$scope.i_toggle=function(){
+		$scope.nameClass="sam pull-left"
 		$scope.myVar=false;
 		$scope.otherVar=false;
 		$scope.myContact=false;

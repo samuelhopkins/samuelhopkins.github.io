@@ -29,6 +29,12 @@ $(window).load(function() {
 	<div ng-app="myApp" ng-controller="cntrl">
 	<div class="container-fluid">
 		<div class="navbar navbar-masthead ">
+			<div class="navbar-inner">
+ 		
+	<div class="my-name">
+		<h1 ng-class="nameClass" ng-click="i_toggle()"><span data-title="Sam Hopkins">Sam Hopkins</span></h1>
+	</div>
+	</div>
 		
 	
 </div>
@@ -115,21 +121,25 @@ $(window).load(function() {
 
 var app = angular.module("myApp",[]);
 app.controller("cntrl",function($scope){
+	$scope.nameClass="sam pull-left";
 	$scope.myVar=false;
 	$scope.otherVar=false;
 	$scope.myClass="container-wide-body";
 	$scope.toggle=function(){
+		$scope.nameClass="sam pull-r";
 		$scope.myVar=true;
 		$scope.otherVar=$scope.myVar;
 		$scope.myClass='container-white-body';
 		console.log($scope.myColor);
 	};
 	$scope.c_toggle=function(){
+		$scope.nameClass="sam pull-r"
 		$scope.myContact=true;
 		$scope.myVar=$scope.myContact;
 		$scope.myClass='container-white-body';
 	};
 	$scope.i_toggle=function(){
+		$scope.nameClass="sam pull-left"
 		$scope.myVar=false;
 		$scope.otherVar=false;
 		$scope.myContact=false;

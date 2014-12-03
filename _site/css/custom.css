@@ -63,6 +63,7 @@ h1.sam{
 	padding-left: 1em;
 }
 
+
 h1.sam:hover{
 	-webkit-transition: all .5s ease;
      -moz-transition: all .5s ease;
@@ -72,7 +73,11 @@ h1.sam:hover{
     color:#fff;
 	text-shadow: 5px 0 10px black;
 	cursor:pointer;
- 
+ }
+
+h1.pull-r{
+	padding-left:calc(100% - 191px - 1em);
+	
 }
 
 h2{
