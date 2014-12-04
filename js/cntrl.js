@@ -23,6 +23,8 @@ app.controller("cntrl",function($scope){
 		{
 			$scope.aboutClass="sam pull-r";
 			$scope.contactClass="sam pull-l";
+			$scope.myContact=true;
+			return;
 		}
 		if($scope.nameClass=="sam pull-l")
 		{
@@ -31,7 +33,7 @@ app.controller("cntrl",function($scope){
 		}
 		$scope.myContact=true;
 		$scope.myVar=$scope.myContact;
-		$scope.myClass='container-white-body';
+		$scope.myClass='container-white-body wide-contact';
 	};
 	$scope.i_toggle=function(){
 		$scope.nameClass="sam pull-l";
