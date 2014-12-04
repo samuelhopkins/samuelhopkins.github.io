@@ -54,15 +54,19 @@ a.index, a.index:hover{
 }
 
 h1.sam{
-	-webkit-transition: all .5s ease;
-     -moz-transition: all .5s ease;
-       -o-transition: all .5s ease;
-      -ms-transition: all .5s ease;
-          transition: all .5s ease;
+	-webkit-transition: all .75s ease;
+     -moz-transition: all .75s ease;
+       -o-transition: all .75s ease;
+      -ms-transition: all .75s ease;
+          transition: all .75s ease;
 	color:#1D8EE6;
-	padding-left: 1em;
 }
 
+h1.pull-l{
+	position: absolute;
+	top:-8px;
+	left:10px;
+}
 
 h1.sam:hover{
 	-webkit-transition: all .5s ease;
@@ -75,8 +79,26 @@ h1.sam:hover{
 	cursor:pointer;
  }
 
+h1.hide{
+	color:rgba(29,142,230,0);
+	-webkit-transition: all 1.5s ease;
+     -moz-transition: all 1.5s ease;
+       -o-transition: all 1.5s ease;
+      -ms-transition: all 1.5s ease;
+          transition: all 1.5s ease;
+}
+
 h1.pull-r{
-	padding-left:calc(100% - 191px - 1em);
+	pointer-events:none;
+	color: rgba(0,0,0,0);
+	position:absolute;
+	top:-8px;
+	left:calc(100% - 160px);
+	-webkit-transition: all 1.5s ease;
+     -moz-transition: all 1.5s ease;
+       -o-transition: all 1.5s ease;
+      -ms-transition: all 1.5s ease;
+          transition: all 1.5s ease;
 	
 }
 
