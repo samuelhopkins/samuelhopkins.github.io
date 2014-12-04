@@ -6,41 +6,38 @@ app.controller("cntrl",function($scope){
 	$scope.aboutClass="sam pull-l hide";
 	$scope.contactClass="sam pull-l hide";
 	$scope.myVar=false;
-	$scope.otherVar=false;
+	$scope.AboutVar=false;
 	$scope.myClass="container-wide-body";
 	$scope.a_toggle=function(){
 		$scope.nameClass="sam pull-r";
-		$scope.nameTitle=false;
-		$scope.aboutClass="sam pull-l";
-		$scope.aboutTitle=true;
+		$scope.aboutClass="sam pull-l red";
 		$scope.myVar=true;
-		$scope.otherVar=$scope.myVar;
+		$scope.AboutVar=$scope.myVar;
 		$scope.myClass='container-white-body';
 		console.log($scope.myColor);
 	};
 	$scope.c_toggle=function(){
-		if($scope.aboutClass=="sam pull-l")
+		$scope.AboutVar=false;
+		$scope.myContact=true;
+		$scope.myVar=$scope.myContact;
+		$scope.myClass='container-white-body wide-contact';
+		if($scope.aboutClass=="sam pull-l red")
 		{
 			$scope.aboutClass="sam pull-r";
-			$scope.contactClass="sam pull-l";
-			$scope.myContact=true;
-			return;
+			$scope.contactClass="sam pull-l red";
 		}
 		if($scope.nameClass=="sam pull-l")
 		{
 			$scope.nameClass="sam pull-r";
-			$scope.contactClass="sam pull-l";
+			$scope.contactClass="sam pull-l red";
 		}
-		$scope.myContact=true;
-		$scope.myVar=$scope.myContact;
-		$scope.myClass='container-white-body wide-contact';
 	};
 	$scope.i_toggle=function(){
 		$scope.nameClass="sam pull-l";
 		$scope.aboutClass="sam pull-l hide";
 		$scope.contactClass="sam pull-l hide";
 		$scope.myVar=false;
-		$scope.otherVar=false;
+		$scope.AboutVar=false;
 		$scope.myContact=false;
 		$scope.myClass='container-wide-body'
 	};

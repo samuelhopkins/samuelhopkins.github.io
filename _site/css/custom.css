@@ -20,6 +20,8 @@ span.contact:hover{
 	cursor:pointer;
 }
 
+
+
 a,
 span.contact {
 color: #828486;
@@ -29,10 +31,14 @@ p{
 	color:rgb(44, 115, 230);
 }
 
+h2.projects{
+	color:rgb(172, 87, 87);
+	text-decoration: underline;;
+}
 
 h3.about{
 	color: rgb(172, 87, 87);
-	float:left;
+	float:center;
 }
 
 h3.about>i:hover{
@@ -42,9 +48,6 @@ h3.about>i:hover{
 
 div.about{
 	text-align: left;
-}
-.nav> li> a:active{
-background-color: #F7F8FC;
 }
 
 a.index, a.index:hover{
@@ -59,13 +62,20 @@ h1.sam{
        -o-transition: all .75s ease;
       -ms-transition: all .75s ease;
           transition: all .75s ease;
+          max-width: auto;
 	color:#1D8EE6;
 }
 
+
 h1.pull-l{
+	-webkit-transition: all .5s ease;
+     -moz-transition: all .5s ease;
+       -o-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+          transition: all .5s ease;
 	position: absolute;
-	top:-8px;
-	left:10px;
+	top:-10px;
+	left:calc(50vw - 95px);
 }
 
 h1.sam:hover{
@@ -80,33 +90,38 @@ h1.sam:hover{
  }
 
 h1.hide{
-	color:rgba(29,142,230,0);
 	-webkit-transition: all 1.5s ease;
      -moz-transition: all 1.5s ease;
        -o-transition: all 1.5s ease;
       -ms-transition: all 1.5s ease;
           transition: all 1.5s ease;
+          color:rgba(29,142,230,0);
 }
 
+h1.red
+{
+	color: rgb(172, 87, 87);
+}
+
+ul.contact-list{
+	display:block;
+	margin-bottom:15px;
+	font-size: 104%;
+}
 h1.pull-r{
 	pointer-events:none;
 	color: rgba(0,0,0,0);
 	position:absolute;
 	top:-8px;
 	left:calc(100% - 160px);
-	-webkit-transition: all 1.5s ease;
-     -moz-transition: all 1.5s ease;
-       -o-transition: all 1.5s ease;
-      -ms-transition: all 1.5s ease;
-          transition: all 1.5s ease;
+	-webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
 	
 }
 
-h2{
-	color:black;
-}
-
-}
 
 
 ul{
@@ -115,7 +130,10 @@ ul{
 
 ul.hexes>li{
 	display:inline-block;
-	padding: 0 8%;
+	padding: 0 8vw;
+}
+ul.hexes{
+	margin-top: 5vh;
 }
 
 li{
@@ -141,7 +159,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p, div, li {
 	font-family: 'Lato', sans-serif;
-	font-size: 105%;
+	font-size: 102%;
    }
 
 div.home-content{
@@ -186,6 +204,9 @@ body{
 .container-wide-body,
 .container-wide-footer{
 	width:100%;
+	color:rgba(0,0,0,0);
+	-webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
 	/*background-color:rgba(255,255,255,.85);*/
 }
 
@@ -197,6 +218,8 @@ body{
 	overflow-y:scroll; 
 	padding: 1% 17% 3% 17%;
 	width:100%;
+	-webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
 }
 
 .container-white-body::-webkit-scrollbar {
@@ -205,7 +228,6 @@ body{
 .container-white-body::-webkit-scrollbar * {
       background:transparent; // manage scrollbar background color here
 }
-
 
 div.navbar-fixed-bottom{
 	text-align:center;
@@ -221,8 +243,8 @@ div.navbar-fixed-bottom{
 	overflow-y:scroll; 
 }
 
-.wide-contact{
-	margin-top:30vh;
+.container-white-body.wide-contact{
+	margin-top:20vh;
 }
 
 .container-wide-body::-webkit-scrollbar {

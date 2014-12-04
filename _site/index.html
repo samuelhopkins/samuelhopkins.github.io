@@ -33,16 +33,16 @@ $(window).load(function() {
 		<div class="navbar navbar-masthead ">
 			<div class="navbar-inner">
  		
-		<h1 ng-class="nameClass" ng-click="i_toggle()" ><span data-title="Sam Hopkins">Sam Hopkins</span></h1>
-		<h1 ng-class="aboutClass" ng-click="i_toggle()"><span data-title="Sam Hopkins">About Me</span></h1>
-		<h1 ng-class="contactClass" ng-click="i_toggle()"><span data-title="Sam Hopkins">Contact</span></h1>
+		<h1 ng-class="nameClass" ng-click="i_toggle()" >Sam Hopkins</h1>
+		<h1 ng-class="aboutClass" ng-click="i_toggle()">About Me</h1>
+		<h1 ng-class="contactClass" ng-click="i_toggle()">Contact</h1>
 </div>
 </div>
 
 
 <div ng-class="myClass">
 <div class="home-content">
-<h3 ng-show="otherVar"class="about"><i class="fa fa-arrow-circle-left fa-1x" ng-click="i_toggle()"></i>About Me</h3>
+<h3 ng-show="AboutVar" class="about"><i class="fa fa-arrow-circle-left fa-1x" ng-click="i_toggle()"></i></h3>
 <ul class="hexes">
 	<li>
 <div ng-hide="myVar" class="pic">
@@ -72,15 +72,34 @@ $(window).load(function() {
 </div>
 </li>
 </ul>
-<div ng-show="otherVar" class="about">
+<div ng-show="AboutVar" class="about">
 <p> 
-	<br>
-	Born and raised in the Bay Area. I am currently a third year <a href="http://uchicago.edu">University of Chicago</a> studying computer science and statistics. I am passionate about facing challenges and building tools to maximize efficiency and enjoyment in all areas of life. The tools I us most frequently are Python and Javascript (especially AngularJs) along with HTML and CSS for design. While I have picked up many skills on my own I seriously value input from others, so please do not hesitate to offer advice (particularly concerning this website). I hope to one day use my knowledge and abilities to help people. Until then, I am actively searching for an opportunity to learn and make a difference. If you have such an opportunity and you believe I could contribute, <span class="contact" ng-click="c_toggle()">let me know.</span> As an aside, if you are currently viewing this site with Safari try Chrome for my sake.
+	Born and raised in the Bay Area. I am currently a third year <a href="http://uchicago.edu">University of Chicago</a> studying computer science and statistics. My passions are technology, programming, design, music, fitness and surfing in no particular order. My dream is to make a career out of any combination of these. If you think you have a job or task I might be right for, or you just want to chat please feel free to <span class="contact" ng-click="c_toggle()">contact me</span>. As an aside, if you are currently viewing this site with Safari try Chrome for my sake.
 
 </p>
+<h2 class="projects">Projects</h2>
+<h3 class="sam"><a href="https://github.com/samuelhopkins/SurfScrape">Surfscrape</a></h3>
+<p class="project-block">
+	A script that runs daily on my computer scrapping data from <a href="www.surfline.com">Surfline.com</a> sending out text message alerts on days with favorable conditions at my home break.
+</p>
+<h3><a href="http://www.TempestaMedia.com">TempestaMedia.com</a></h3>
+<p class="project-block">
+	A corporate website I designed and built for Tempesta Media LLC.
+</p>
+<h2 class="projects">Tools</h2>
+<p class="project-block">
+	I use python for most of my personal programming projects and C for about 80% of class projects. I am also a big fan of AngularJs. My favorite musical tools are guitars and pianos. Sometimes I even use my own voice. I recently began working with violins and have found it both immensly rewarding and extremely frustrating. Such is life. For surfing I typically use my 9'10 Santa Cruz Charger. I worked construction for two summers so I am competent with most power tools and some heavy machinery such as scissor lifts. I also use the internet a lot.
+</p>
+<h2 class="projects">Photography</h2>
+<p class="project-block">
+	All pictures used in the making of this site were taken by me on my iPhone.
+</p>
+
+	
+
 </div>
 <div ng-show="myContact" class="contact">
-	<ul>
+	<ul class="contact-list">
 		<li>
 			<a href="#"><i class="fa fa-arrow-circle-left fa-2x" ng-click="i_toggle()"></i></a>
 		</li>
