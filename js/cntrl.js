@@ -10,7 +10,7 @@ app.controller("cntrl",function($scope){
 	$scope.myClass="container-wide-body";
 	$scope.a_toggle=function(){
 		$scope.nameClass="sam pull-r";
-		$scope.aboutClass="sam pull-l red";
+		$scope.aboutClass="sam pull-l red a";
 		$scope.myVar=true;
 		$scope.AboutVar=$scope.myVar;
 		$scope.myClass='container-white-body';
@@ -21,7 +21,7 @@ app.controller("cntrl",function($scope){
 		$scope.myContact=true;
 		$scope.myVar=$scope.myContact;
 		$scope.myClass='container-white-body wide-contact';
-		if($scope.aboutClass=="sam pull-l red")
+		if($scope.aboutClass=="sam pull-l red a")
 		{
 			$scope.aboutClass="sam pull-r";
 			$scope.contactClass="sam pull-l red";
@@ -33,9 +33,16 @@ app.controller("cntrl",function($scope){
 		}
 	};
 	$scope.i_toggle=function(){
-		$scope.nameClass="sam pull-l";
-		$scope.aboutClass="sam pull-l hide";
-		$scope.contactClass="sam pull-l hide";
+		if($scope.aboutClass="sam pull-l red a")
+		{
+			$scope.aboutClass="sam pull-r-a";
+			$scope.nameClass="sam pull-l";
+		}
+		if($scope.contactClass="sam pull-l red")
+		{
+			$scope.contactClass="sam pull-r-c";
+			$scope.nameClass="sam pull-l";
+		}
 		$scope.myVar=false;
 		$scope.AboutVar=false;
 		$scope.myContact=false;

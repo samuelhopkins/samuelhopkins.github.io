@@ -28,16 +28,16 @@ color: #828486;
 }
 
 p{
-	color:rgb(44, 115, 230);
+	color:rgb(65, 69, 71);
 }
 
 h2.projects{
-	color:rgb(172, 87, 87);
+	color:rgb(53, 146, 237);
 	text-decoration: underline;;
 }
 
 h3.about{
-	color: rgb(172, 87, 87);
+	color: rgb(84, 79, 79);
 	float:center;
 }
 
@@ -63,7 +63,7 @@ h1.sam{
       -ms-transition: all .75s ease;
           transition: all .75s ease;
           max-width: auto;
-	color:#1D8EE6;
+	color:black;
 }
 
 
@@ -100,7 +100,42 @@ h1.hide{
 
 h1.red
 {
-	color: rgb(172, 87, 87);
+	color: #4B95FF;
+	left:calc(50vw - 55px);
+}
+
+h1.a
+{
+	left:calc(50vw - 74px);
+}
+
+h1.pull-r-a,h1.pull-r-c,h1.pull-r{
+	pointer-events:none;
+	color: rgba(0,0,0,0);
+	position:absolute;
+	top:calc(90vh - 15px);
+	-webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+	
+}
+
+
+h1.pull-r-c
+{
+	left:calc(50vw - 55px);
+}
+
+h1.pull-r-a
+{
+	left:calc(50vw - 74px);
+}
+
+h1.pull-r
+{
+	left:calc(50vw - 95px);
 }
 
 ul.contact-list{
@@ -108,19 +143,8 @@ ul.contact-list{
 	margin-bottom:15px;
 	font-size: 104%;
 }
-h1.pull-r{
-	pointer-events:none;
-	color: rgba(0,0,0,0);
-	position:absolute;
-	top:-8px;
-	left:calc(100% - 160px);
-	-webkit-transition: all 1s ease;
-     -moz-transition: all 1s ease;
-       -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-          transition: all 1s ease;
-	
-}
+
+
 
 
 
@@ -187,7 +211,7 @@ div.contact{
 }
 
 .contact a{
-	color:#C5264C;
+	color:#4D545E;
 }
 
 .contact a:hover{
@@ -216,7 +240,7 @@ body{
 	max-height:calc(75% - 7em);
 	position:absolute;
 	overflow-y:scroll; 
-	padding: 1% 17% 3% 17%;
+	padding: 0 17vw 2vw;
 	width:100%;
 	-webkit-transition: all linear 0.5s;
   transition: all linear 0.5s;
