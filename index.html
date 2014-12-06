@@ -12,6 +12,7 @@
 	<link href="/css/bootstrap.css" rel="stylesheet">
 	<link href="/css/custom.css" rel="stylesheet">
 	<link href="/css/hexagon.css" rel="stylesheet">
+	<link href="/css/hex.css" rel="stylesheet">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
@@ -43,11 +44,12 @@ $(window).load(function() {
 <ul class="hexes">
 	<li>
 <div ng-hide="myVar" class="pic">
-	<div id="pic" class="hexagon" ng-click="a_toggle()">
-		ABOUT ME
-		<div class="face1"></div>
-		<div class="face2"></div>
-	</div>
+	<div class="hex hex1" ng-click="a_toggle()">
+		<div class="hex-in1">
+			<div class="hex-in2">
+			</div>
+		</div>
+</div>
 </div>
 </li>
 <li>
@@ -71,7 +73,7 @@ $(window).load(function() {
 </ul>
 <div ng-show="AboutVar" class="about">
 <p> 
-	Born and raised in the Bay Area. I am currently a third year <a href="http://uchicago.edu">University of Chicago</a> studying computer science and statistics. My passions are technology, programming, design, music, fitness and surfing in no particular order. My dream is to make a career out of any combination of these. If you think you have a job or task I might be right for, or you just want to chat please feel free to <span class="contact" ng-click="c_toggle()">contact me</span>. As an aside, if you are currently viewing this site with Safari try Chrome for my sake.
+	Born and raised in the Bay Area. I am currently a third year <a href="http://uchicago.edu">University of Chicago</a> studying computer science and statistics. My passions are technology, programming, design, music, fitness, and surfing in no particular order. My dream is to make a career out of any combination of these. If you think you have a job or task I might be right for, or you just want to chat please feel free to <span class="contact" ng-click="c_toggle()">contact me</span>. As an aside, if you are currently viewing this site with Safari try Chrome for my sake.
 
 </p>
 <h2 class="projects">Projects</h2>

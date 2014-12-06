@@ -28,6 +28,9 @@ app.controller("cntrl",function($scope){
 		{
 			$scope.aboutClass="sam pull-r";
 			$scope.contactClass="sam pull-l red";
+			$scope.headBar="navbar head";
+			$scope.footBar="navbar navbar-masthead navbar-fixed-bottom";
+
 		}
 		if($scope.nameClass=="sam pull-l")
 		{
