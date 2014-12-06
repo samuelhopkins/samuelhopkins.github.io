@@ -7,14 +7,17 @@ app.controller("cntrl",function($scope){
 	$scope.contactClass="sam pull-l hide";
 	$scope.myVar=false;
 	$scope.AboutVar=false;
+	$scope.headBar="navbar head";
 	$scope.myClass="container-wide-body";
+	$scope.footBar="navbar navbar-masthead navbar-fixed-bottom";
 	$scope.a_toggle=function(){
 		$scope.nameClass="sam pull-r";
 		$scope.aboutClass="sam pull-l red a";
 		$scope.myVar=true;
 		$scope.AboutVar=$scope.myVar;
-		$scope.myClass='container-white-body';
-		console.log($scope.myColor);
+		$scope.myClass='container-white-body short';
+		$scope.headBar="navbar head short";
+		$scope.footBar="navbar navbar-masthead navbar-fixed-bottom short left";
 	};
 	$scope.c_toggle=function(){
 		$scope.AboutVar=false;
@@ -47,6 +50,8 @@ app.controller("cntrl",function($scope){
 		$scope.AboutVar=false;
 		$scope.myContact=false;
 		$scope.myClass='container-wide-body'
+		$scope.headBar="navbar head";
+		$scope.footBar="navbar navbar-masthead navbar-fixed-bottom";
 	};
 });
 

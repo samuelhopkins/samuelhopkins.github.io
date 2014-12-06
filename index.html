@@ -28,17 +28,14 @@ $(window).load(function() {
 
 <body>
 	<div id="spinner"></div>
-	<div ng-app="myApp" ng-controller="cntrl">
-	<div class="container-fluid">
-		<div class="navbar navbar-masthead ">
-			<div class="navbar-inner">
+	<div class="container">
+	<div id="app" ng-app="myApp" ng-controller="cntrl">
+		<div ng-class="headBar">
  		
 		<h1 ng-class="nameClass" ng-click="i_toggle()" >Sam Hopkins</h1>
 		<h1 ng-class="aboutClass" ng-click="i_toggle()">About Me</h1>
 		<h1 ng-class="contactClass" ng-click="i_toggle()">Contact</h1>
 </div>
-</div>
-
 
 <div ng-class="myClass">
 <div class="home-content">
@@ -94,12 +91,6 @@ $(window).load(function() {
 <p class="project-block">
 	All pictures used in the making of this site were taken by me on my iPhone.
 </p>
-<p class="project-block" style="text-align:center">
-<iframe id="vid" width="420" height="315"
-src="http://www.youtube.com/embed/5jUGAVUwhRU">
-</iframe>
-</p>
-
 	
 
 </div>
@@ -120,12 +111,14 @@ src="http://www.youtube.com/embed/5jUGAVUwhRU">
 </div>
 </div>
 </div>
-</div>
+
+
 <div class="container-wide foot">
-<div class="navbar navbar-masthead navbar-fixed-bottom">
+<div ng-class="footBar">
 	<ul class="nav foot navbar-masthead pull-center">
 			<li> &copy; Sam Hopkins, 2014</li>
 		</ul>
+</div>
 </div>
 </div>
 </div>
