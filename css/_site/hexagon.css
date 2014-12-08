@@ -10,15 +10,15 @@
   /* Text styling */
   line-height: 110px;
   text-align: center;
-  font-family: sans-serif;
+  font-family: 'Black Ops One', cursive;
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 6px;
   color: #fff;
-  color: rgba(255,255,255,.5);
+  color: rgba(255,255,255,0);
   cursor: pointer;
   transition: color 500ms ease, text-shadow 500ms ease;
-  box-shadow: 0 0 20px rgba(0,0,0,1);
+  box-shadow: 0 0 20px rgba(255,255,255,1);
 }
 
 
