@@ -180,7 +180,8 @@ ul.hexes>li{
 	padding: 0 8%;
 }
 ul.hexes{
-	margin-top: 5vh;
+	margin-top: 9vh;
+padding-right: 9%;
 }
 
 li{
@@ -281,6 +282,9 @@ div.container-wide-body
 .container-white-body::-webkit-scrollbar * {
       background:transparent; // manage scrollbar background color here
 }
+.container-wide-body::-webkit-scrollbar * {
+      background:transparent; // manage scrollbar background color here
+}
 
 div.navbar-fixed-bottom{
 	text-align:center;
@@ -299,7 +303,6 @@ div.short{
 	height: auto;
 	max-height: 70%;
 	position:absolute;
-	overflow-y:scroll; 
 }
 
 .container-white-body.wide-contact{
@@ -310,7 +313,7 @@ div.short{
 }
 
 .container-wide-body::-webkit-scrollbar {
-      width:25px; // manage scrollbar width here
+      width:0px; // manage scrollbar width here
 }
 .container-wide-body::-webkit-scrollbar * {
       background:transparent; // manage scrollbar background color here
@@ -322,9 +325,11 @@ div.short{
 }
 
 
+
 #contact.hexagon{
   background-image: url(/img/Tahoe.JPG);
 }
+
 
 #resume.hexagon{
 	background-image: url(/img/Capitola.jpg);
