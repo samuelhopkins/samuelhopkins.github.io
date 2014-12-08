@@ -181,7 +181,7 @@ ul.hexes>li{
 }
 ul.hexes{
 	margin-top: 9vh;
-padding-right: 9%;
+padding-right: 0;
 }
 
 li{
