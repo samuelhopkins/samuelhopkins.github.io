@@ -29,7 +29,7 @@ width:100%;
 .foot>li{
 	padding-top: 1em ;
 	padding-bottom: .5em;
-	color: #828486;
+	color:black;
 }
 
 
@@ -95,7 +95,7 @@ h1.pull-l{
           transition: all .5s ease;
 	position: absolute;
 	top:-10px;
-	left:calc(50% - 95px);
+	left:calc(50% - 125px);
 }
 
 h1.sam:hover{
@@ -104,8 +104,8 @@ h1.sam:hover{
        -o-transition: all .5s ease;
       -ms-transition: all .5s ease;
           transition: all .5s ease;
-    color:#fff;
-	text-shadow: 5px 0 10px black;
+    color:rgb(84, 79, 79);
+	
 	cursor:pointer;
  }
 
@@ -121,12 +121,12 @@ h1.hide{
 h1.red
 {
 	color: black;
-	left:calc(50% - 55px);
+	left:calc(50% - 75px);
 }
 
 h1.a
 {
-	left:calc(50% - 74px);
+	left:calc(50% - 89px);
 }
 
 h1.pull-r-a,h1.pull-r-c,h1.pull-r{
@@ -252,7 +252,7 @@ div.contact{
 }
 
 .contact a{
-	color:#4D545E;
+	color:black;
 }
 
 .contact a:hover{
@@ -311,6 +311,8 @@ div.navbar-fixed-bottom{
 div.short{
 	width:75vw;
 	background-color: rgba(255,255,255,0.85);
+	-webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
 }
 
 
@@ -351,11 +353,16 @@ div.short{
 	background-image: url(/img/Capitola.jpg);
 }
 
-#contact.hexagon:hover,
 #resume.hexagon:hover,
 #pic.hexagon:hover{
-  color: #fff;
+  color: #000;
   text-shadow: 0 0 10px white;
+}
+
+#contact.hexagon:hover
+{
+  color: #fff;
+  text-shadow: 0 0 10px black;
 }
 
 

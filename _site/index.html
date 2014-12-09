@@ -12,6 +12,7 @@
 	<link href="/css/bootstrap.css" rel="stylesheet">
 	<link href="/css/custom.css" rel="stylesheet">
 	<link href="/css/hexagon.css" rel="stylesheet">
+	<link href="/css/circle.css" rel="stylesheet">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Black+Ops+One' rel='stylesheet' type='text/css'>
@@ -19,6 +20,7 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="/js/cntrl.js"></script>
+
 <script type="text/javascript">
 $(window).load(function() {
 	$("#spinner").fadeOut("slow");
@@ -41,38 +43,37 @@ $(window).load(function() {
 <div class="home-content">
 <h3 ng-show="AboutVar" class="about"><i class="fa fa-arrow-circle-left fa-1x" ng-click="i_toggle()"></i></h3>
 <ul class="hexes">
-	<li>
+	<li class="under">
 <div ng-hide="myVar" class="phone">
-	<div id="contact" class="hexagon" ng-click="c_toggle()">
+	<div id="contact" class="circular" ng-click="c_toggle()">
+		<p class="circle">
 		CONTACT
-		<div class="face1"></div>
-		<div class="face2"></div>
+	</p>
 	</div>
 </div>
 </li>
-<li>
+<li class="top">
 	<div ng-hide="myVar" class="pic">
-	<div id="pic" class="hexagon" ng-click="a_toggle()">
+	<div id="pic" class="circular" ng-click="a_toggle()">
+		<p class="circle">
 		ABOUT ME
-		<div class="face1"></div>
-		<div class="face2"></div>
+		</p>
 	</div>
 </div>
 </li>
-<li>
+<li class="under">
 <div ng-hide="myVar" class="resume"><a href="WebResume.pdf">
-	<div id="resume" class="hexagon">
+	<div id="resume" class="circular">
+		<p class="circle">
 		RESUME
-		<div class="face1"></div>
-		<div class="face2"></div>
+	</p>
 	</div></a>
 </div>
 </li>
 </ul>
 <div ng-show="AboutVar" class="about">
 <p> 
-	Born and raised in the Bay Area. I am currently a third year <a href="http://uchicago.edu">University of Chicago</a> studying computer science and statistics. My passions are technology, programming, design, music, fitness and surfing in no particular order. My dream is to make a career out of any combination of these. If you think you have a job or task I might be right for, or you just want to chat please feel free to <span class="contact" ng-click="c_toggle()">contact me</span>. As an aside, if you are currently viewing this site with Safari try Chrome for my sake. An effort was made to make this site Safari compatible but Apple really needs to meet me halfway.
-
+	Born and raised in the Bay Area. I am currently a third year <a href="http://uchicago.edu">University of Chicago</a> studying computer science and statistics. My passions are technology, programming, design, music, fitness and surfing in no particular order. My dream is to make a career out of any combination of these. If you think you have a job or task I might be right for, or you just want to chat please feel free to <span class="contact" ng-click="c_toggle()">contact me</span>. 
 </p>
 <h2 class="projects">Projects</h2>
 <h3 class="sam"><a href="https://github.com/samuelhopkins/SurfScrape">Surfscrape</a></h3>
