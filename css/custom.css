@@ -311,6 +311,8 @@ div.navbar-fixed-bottom{
 div.short{
 	width:75vw;
 	background-color: rgba(255,255,255,0.85);
+	-webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
 }
 
 
