@@ -104,7 +104,7 @@ h1.sam:hover{
        -o-transition: all .5s ease;
       -ms-transition: all .5s ease;
           transition: all .5s ease;
-    color:#828486;
+    color:rgb(84, 79, 79);
 	
 	cursor:pointer;
  }
