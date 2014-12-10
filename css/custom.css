@@ -1,5 +1,5 @@
 .navbar {
-	background-color: white;
+	background-color: rgba(255,255,255,0.5);
 	border-radius: 0px;
 	margin-bottom: 0;
 	width:100vw;
@@ -70,11 +70,7 @@ div.about{
 	text-align: left;
 }
 
-a.index, a.index:hover{
-	color:#1D8EE6;
-	text-decoration: none;
-	padding-left: 1em;
-}
+
 
 h1.sam{
 	-webkit-transition: all .75s ease;
@@ -94,8 +90,8 @@ h1.pull-l{
       -ms-transition: all .5s ease;
           transition: all .5s ease;
 	position: absolute;
-	top:-10px;
-	left:calc(50% - 125px);
+	top:-14px;
+	left:calc(50% - 114px);
 }
 
 h1.sam:hover{
@@ -104,7 +100,6 @@ h1.sam:hover{
        -o-transition: all .5s ease;
       -ms-transition: all .5s ease;
           transition: all .5s ease;
-    color:rgb(84, 79, 79);
 	
 	cursor:pointer;
  }
@@ -121,19 +116,19 @@ h1.hide{
 h1.red
 {
 	color: black;
-	left:calc(50% - 75px);
+	left:calc(50% - 67.5px);
 }
 
 h1.a
 {
-	left:calc(50% - 89px);
+	left:calc(50% - 85px);
 }
 
 h1.pull-r-a,h1.pull-r-c,h1.pull-r{
 	pointer-events:none;
 	color: rgba(0,0,0,0);
 	position:absolute;
-	top:calc(90vh - 15px);
+	top:calc(90vh - 10px);
 	-webkit-transition: all 0.5s ease;
      -moz-transition: all 0.5s ease;
        -o-transition: all 0.5s ease;
@@ -176,7 +171,7 @@ ul{
 
 ul.hexes>li{
 	display:inline-block;
-	padding: 0 0%;
+	padding: 0 1%;
 	-webkit-transition: all 0.5s ease;
      -moz-transition: all 0.5s ease;
        -o-transition: all 0.5s ease;
@@ -186,7 +181,7 @@ ul.hexes>li{
 
 ul.hexes>li:hover
 {
-	padding:0 10%;
+	padding:30px 40px;
 	-webkit-transition: all 0.5s ease;
      -moz-transition: all 0.5s ease;
        -o-transition: all 0.5s ease;
@@ -206,11 +201,8 @@ li{
 }
 
 body {
-  background: url(/img/GoldenGate.JPG) fixed no-repeat;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
+  background: url(/img/concrete_wall_2.png) fixed repeat;
+
  
 }
 
@@ -218,11 +210,12 @@ body {
 
 
 h1, h2, h3, h4, h5, h6, li {
-	font-family: 'Hammersmith One', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
 }
 
 p, div {
-	font-family: 'Arvo', serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 102%;
    }
 
@@ -277,7 +270,11 @@ body{
 div.container-wide-body
 {
 	position:relative;
-
+    margin: 0 auto;
+height: auto;
+max-height: 70%;
+margin-top: 5vh;
+width: 620px;
 }
 
 .container-white-body{
@@ -312,7 +309,7 @@ div.navbar-fixed-bottom{
 
 div.short{
 	width:75vw;
-	background-color: rgba(255,255,255,0.85);
+	background-color: rgba(255,255,255,0.41);
 	-webkit-transition: all linear 0.5s;
   transition: all linear 0.5s;
 }
@@ -326,6 +323,7 @@ div.short{
 }
 
 .container-white-body.wide-contact{
+	background-color:rgba(255,255,255,0.41);
 	margin-top:20vh;
 	width:100vw;
 	height:auto;
@@ -345,18 +343,19 @@ div.short{
 }
 
 #contact.circular{
-  background-image: url(/img/Tahoe.JPG);
+	background-image: url(/img/Capitola.jpg);
+
 }
 
 
 #resume.circular{
-	background-image: url(/img/Capitola.jpg);
+	 background-image: url(/img/Tahoe.JPG);
 }
 
 #resume.circular>p:hover,
 #pic.circular>p:hover{
-  color: #000;
-  text-shadow: 0 0 10px white;
+  color: #FFF;
+  text-shadow: 0 0 10px black;
 }
 
 
@@ -382,7 +381,7 @@ div.phone,
 div.pic,
 div.resume,
 {
-	height:220px;
+	height:200px;
 	width:220px;
 }
 

@@ -11,16 +11,14 @@
     font-size: 17px;
   letter-spacing: 6px;
   cursor: pointer;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .8);
-    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .8);
-    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, .8);
     }
 
 .circular>p.circle
 {
     padding: 95px 0;
     text-align: center;
-     font-family: 'Hammersmith One', sans-serif;
+     font-family: 'Raleway', sans-serif;
+    font-weight: 500;
      height:200px;
     color:rgba(0,0,0,0);
     -webkit-transition: all .5s ease;
