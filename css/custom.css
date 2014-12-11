@@ -48,7 +48,7 @@ color: #828486;
 }
 
 p{
-	color:rgb(65, 69, 71);
+	color:black;
 }
 
 h2.projects{
@@ -91,7 +91,7 @@ h1.pull-l{
           transition: all .5s ease;
 	position: absolute;
 	top:-14px;
-	left:calc(50% - 114px);
+	left:calc(50% - 127px);
 }
 
 h1.sam:hover{
@@ -116,12 +116,12 @@ h1.hide{
 h1.red
 {
 	color: black;
-	left:calc(50% - 67.5px);
+	left:calc(50% - 90px);
 }
 
 h1.a
 {
-	left:calc(50% - 85px);
+	left:calc(50% - 98px);
 }
 
 h1.pull-r-a,h1.pull-r-c,h1.pull-r{
@@ -140,17 +140,17 @@ h1.pull-r-a,h1.pull-r-c,h1.pull-r{
 
 h1.pull-r-c
 {
-	left:calc(50% - 55px);
+	left:calc(50% - 90px);
 }
 
 h1.pull-r-a
 {
-	left:calc(50% - 74px);
+	left:calc(50% - 98px);
 }
 
 h1.pull-r
 {
-	left:calc(50% - 95px);
+	left:calc(50% - 127px);
 }
 
 ul.contact-list{
