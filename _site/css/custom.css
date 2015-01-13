@@ -260,7 +260,7 @@ div.container-wide-body
     margin: 0 auto;
 height: auto;
 max-height: 70%;
-margin-top: 5vh;
+margin-top: 12vh;
 width: 620px;
 }
 
@@ -387,5 +387,24 @@ background: url(/img/Loading.gif) 50% 50% no-repeat #ede9df;
     .short {
         font-size: 90%;
     }
+
+    div.container-wide-body{
+    	width:100%;
+    	margin-top:5vh;
+    }
+
+    #resume.circular>p,
+#pic.circular>p{
+  color: #FFF;
+  text-shadow: 0 0 10px black;
+}
+
+
+
+#contact.circular>p.circle
+{
+  color: #FFF;
+  text-shadow: 0 0 10px black;
+}
 }
 
