@@ -11,7 +11,8 @@
 {
 	$("div.pic").stop().animate({"padding-left":"0px"});
 	$("div.resume").stop().animate({
-		"padding":"0px"
+		"padding":"0px",
+		"padding-left":"0px",
 });
 });
 
@@ -28,7 +29,8 @@ $("div.pic").hover(function()
 {
 	$("div.phone").stop().animate({"padding-right":"0px"});
 	$("div.resume").stop().animate({
-		"padding":"0px"
+		"padding":"0px",
+		"padding-right":"0px",
 	});
 });
 
