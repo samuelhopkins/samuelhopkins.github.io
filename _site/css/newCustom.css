@@ -11,6 +11,11 @@
 border-radius: 0;
 }
 
+.nav-tabs
+{
+	border: 1px solid transparent;
+}
+
 .navbar-header {
 	margin-top: 25px;
 }
