@@ -31,4 +31,8 @@ $("#home").click(function() {
         scrollTop: $("#slide-1").offset().top + 500
     }, 1500);
 });
+
+$(window).bind('resize', function() {
+     location.reload();
+});
 });
