@@ -30,11 +30,7 @@ border-radius: 0;
 .tahoe 
 {   
 	min-height: 1400px;
-<<<<<<< HEAD
-	background:url('/img/Tahoe.JPG');
-=======
 	background:url('../img/Tahoe.JPG');
->>>>>>> 935fa6dde89e9358a9223832b4b7e1948e76f058
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
@@ -43,11 +39,7 @@ border-radius: 0;
 
 .gate
 {
-<<<<<<< HEAD
-	background:url('/img/GoldenGate.JPG');
-=======
 	background:url('../img/GoldenGate.jpg');
->>>>>>> 935fa6dde89e9358a9223832b4b7e1948e76f058
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
@@ -56,11 +48,7 @@ border-radius: 0;
 
 .capitola
 {
-<<<<<<< HEAD
-	background:url('/img/Capitola.jpg');
-=======
 	background:url('../img/Capitola.jpg');
->>>>>>> 935fa6dde89e9358a9223832b4b7e1948e76f058
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
@@ -69,11 +57,7 @@ border-radius: 0;
 
 .point
 {
-<<<<<<< HEAD
-	background:url('/img/sandiego.jpg');
-=======
 	background:url('../img/ThePoint.JPG');
->>>>>>> 935fa6dde89e9358a9223832b4b7e1948e76f058
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
