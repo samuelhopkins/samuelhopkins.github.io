@@ -1,23 +1,32 @@
  $(document).ready(function(){
 	var s = skrollr.init();
 
+    $("html").niceScroll({
+    	cursorcolor: "#0000",
+    	cursorwidth: "8px",
+    	scrollspeed: 100,
+    	cursorborderradius: "0px"
+    });
+	
+
 $("#about").click(function() {
     $('html, body').animate({
         scrollTop: $("#slide-2").offset().top
     }, 1500);
 });
 
+$("#about-btn").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#slide-2").offset().top 
+    }, 1000);
+});
+
 $("#projects").click(function() {
     $('html, body').animate({
-        scrollTop: $("#slide-4").offset().top
+        scrollTop: $("#slide-4").offset().top - 100
     }, 1500);
 });
 
-$("#resume").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#slide-6").offset().top
-    }, 1500);
-});
 
 $("#contact").click(function() {
     $('html, body').animate({
@@ -25,14 +34,100 @@ $("#contact").click(function() {
     }, 1500);
 });
 
-
-$("#home").click(function() {
+$("#contact-link").click(function() {
     $('html, body').animate({
-        scrollTop: $("#slide-1").offset().top + 500
+        scrollTop: $("#slide-8").offset().top + 300
     }, 1500);
 });
 
-$(window).bind('resize', function() {
-     location.reload();
 });
+
+$(function () {
+    var $window = $(window),
+        didScroll = false,
+        skillsTop = $('#skills').offset().top - 400; //the point at which we will create the chart
+
+    $window.on('scroll', function () {
+        //detected a scroll event, you want to minimize the code here because this event can be thrown A LOT!
+        didScroll = true;
+    });
+
+    //check every 250ms if user has scrolled to the skills section
+    setInterval(function () {
+        if (didScroll) {
+            didScroll = false;
+            if ($window.scrollTop() >= skillsTop) {
+                createChart();
+            }
+        }
+    }, 250);
+
+    function createChart() {
+        $window.off('scroll'); //remove listener that will create chart, this ensures the chart will be created only once
+        $('#container').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: 0,
+            plotShadow: false
+        },
+        title: {
+             style: {
+         color: '#FFFFFF',
+         font: 'bold 16px "Trebuchet MS", Verdana, sans-serif'
+      },
+            text: "",
+            align: 'center',
+            verticalAlign: 'middle',
+            y: 40
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                dataLabels: {
+                    enabled: false,
+                    distance: -50,
+                },
+                showInLegend: true,
+                startAngle: -90,
+                endAngle: 90,
+                center: ['50%', '75%']
+            }
+        },
+        legend: { 
+        	itemHoverStyle: {
+        		color: '#0000'
+        	},
+        	itemStyle: {
+        		font: '9pt Trebuchet MS, Verdana, sans-serif',
+        		color: '#0000',
+        	}
+
+        },
+        series: [{
+            type: 'pie',
+            name: 'Percentage of time spent programming in',
+            innerSize: '40%',
+            data: [
+            	['Python',  30.00],
+                ['C',  20.00],
+                ['Ruby', 15.00],
+                ['HTML/CSS',   15.00],
+                ['Swift', 10.00],
+                ['Javascript', 10.00],
+                
+                
+            ]
+        }]
+    });
+
+
+
+
+
+    };
 });
+
+
+ 
