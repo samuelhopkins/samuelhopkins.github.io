@@ -107,7 +107,7 @@ $(function () {
         },
         series: [{
             type: 'pie',
-            name: 'Percentage of time spent programming in',
+            name: 'Percentage of time spent programming with',
             innerSize: '40%',
             data: [
             	['Python',  30.00],
