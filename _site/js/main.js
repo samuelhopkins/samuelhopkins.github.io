@@ -51,7 +51,7 @@ $(function () {
         didScroll = false,
         skillsTop = $('#skills').offset().top - 400; //the point at which we will create the chart
     if (isMobile.matches) {
-        skillsTop = 0;
+        skillsTop = $('#skills').offset().top - 200;
     }
     $window.on('scroll', function () {
         //detected a scroll event, you want to minimize the code here because this event can be thrown A LOT!
@@ -63,7 +63,12 @@ $(function () {
         if (didScroll) {
             didScroll = false;
             if ($window.scrollTop() >= skillsTop) {
-                createChart();
+                if (isMobile.matches){
+                    createMobileChart();
+                }
+                else{
+                    createChart();
+                }
             }
         }
     }, 250);
@@ -117,6 +122,72 @@ $(function () {
             innerSize: '40%',
             data: [
             	['Python',  30.00],
+                ['C',  20.00],
+                ['Ruby', 15.00],
+                ['HTML/CSS',   15.00],
+                ['Swift', 10.00],
+                ['Javascript', 10.00],
+                
+                
+            ]
+        }]
+    });
+
+
+
+
+
+    }
+
+       function createMobileChart() {
+        $window.off('scroll'); //remove listener that will create chart, this ensures the chart will be created only once
+        $('#container').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: 0,
+            plotShadow: false
+        },
+        title: {
+             style: {
+         color: '#FFFFFF',
+         font: 'bold 16px "Trebuchet MS", Verdana, sans-serif'
+      },
+            text: "",
+            align: 'center',
+            verticalAlign: 'middle',
+            y: 40
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                dataLabels: {
+                    enabled: true,
+                    distance: -50,
+                },
+                showInLegend: false,
+                startAngle: -90,
+                endAngle: 90,
+                center: ['50%', '75%']
+            }
+        },
+        legend: { 
+            itemHoverStyle: {
+                color: '#0000'
+            },
+            itemStyle: {
+                font: '9pt Trebuchet MS, Verdana, sans-serif',
+                color: '#0000',
+            }
+
+        },
+        series: [{
+            type: 'pie',
+            name: 'Percentage of time spent programming with',
+            innerSize: '40%',
+            data: [
+                ['Python',  30.00],
                 ['C',  20.00],
                 ['Ruby', 15.00],
                 ['HTML/CSS',   15.00],
