@@ -30,18 +30,24 @@ $("#projects").click(function() {
     }, 1500);
 });
 
-var offSet = 300;
-if (width <= 600)
-{
-    offSet = 500;
-}
+
 $("#contact").click(function() {
+    var offSet = 300;
+    if (width <= 600)
+    {
+        offSet = - 100;
+    }
     $('html, body').animate({
         scrollTop: $("#slide-8").offset().top + offSet
     }, 1500);
 });
 
 $("#contact-link").click(function() {
+    var offSet = 300;
+    if (width <= 600)
+    {
+        offSet = - 100;
+    }
     $('html, body').animate({
         scrollTop: $("#slide-8").offset().top + 300
     }, 1500);
