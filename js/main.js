@@ -51,7 +51,7 @@ $(function () {
         didScroll = false,
         skillsTop = $('#skills').offset().top - 400; //the point at which we will create the chart
     if (isMobile.matches) {
-        skillsTop = $('#skills').offset().top - 200;
+        skillsTop = $('#skills').offset().top - 700;
     }
     $window.on('scroll', function () {
         //detected a scroll event, you want to minimize the code here because this event can be thrown A LOT!
