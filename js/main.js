@@ -2,7 +2,7 @@
  $(document).ready(function(){
 	var s = skrollr.init({constants: {mobileTop: 20}});
     isMobile = window.matchMedia("only screen and (max-width: 760px)");
-
+    var width = $(window).width();
     $("html").niceScroll({
     	cursorcolor: "#0000",
     	cursorwidth: "8px",
@@ -29,10 +29,14 @@ $("#projects").click(function() {
     }, 1500);
 });
 
-
+var offSet = 300;
+if (width <= 600)
+{
+    offSet = 0;
+}
 $("#contact").click(function() {
     $('html, body').animate({
-        scrollTop: $("#slide-8").offset().top + 300
+        scrollTop: $("#slide-8").offset().top + offSet
     }, 1500);
 });
 
