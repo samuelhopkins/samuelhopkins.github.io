@@ -3,6 +3,7 @@
 	var s = skrollr.init({constants: {mobileTop: 20}});
     isMobile = window.matchMedia("only screen and (max-width: 760px)");
     var width = $(window).width();
+    console.log("width is "+width);
     $("html").niceScroll({
     	cursorcolor: "#0000",
     	cursorwidth: "8px",
@@ -32,7 +33,7 @@ $("#projects").click(function() {
 var offSet = 300;
 if (width <= 600)
 {
-    offSet = 200;
+    offSet = -200;
 }
 $("#contact").click(function() {
     $('html, body').animate({
