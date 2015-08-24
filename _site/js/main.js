@@ -49,7 +49,7 @@ $("#contact-link").click(function() {
         offSet = - 100;
     }
     $('html, body').animate({
-        scrollTop: $("#slide-8").offset().top + 300
+        scrollTop: $("#slide-8").offset().top + offSet
     }, 1500);
 });
 
