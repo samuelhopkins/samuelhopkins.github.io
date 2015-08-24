@@ -1,16 +1,11 @@
  $(document).ready(function(){
-	//var s = skrollr.init();
-     skrollr.init({          
-        mobileCheck: function() {
-            //hack - forces mobile version to be off
-            return false;
-        }
-    });
+	var s = skrollr.init();
+
     $("html").niceScroll({
-        cursorcolor: "#0000",
-        cursorwidth: "8px",
-        scrollspeed: 100,
-        cursorborderradius: "0px"
+    	cursorcolor: "#0000",
+    	cursorwidth: "8px",
+    	scrollspeed: 100,
+    	cursorborderradius: "0px"
     });
 	
 
@@ -22,7 +17,7 @@ $("#about").click(function() {
 
 $("#about-btn").click(function() {
     $('html, body').animate({
-        scrollTop: $("#slide-2").offset().top
+        scrollTop: $("#slide-2").offset().top 
     }, 1000);
 });
 
