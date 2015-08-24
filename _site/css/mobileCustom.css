@@ -7,9 +7,8 @@
     width:100%;
 }
 .nav > li > a{
-    font-size: 0.9em;
+    font-size: 1.2em;
 }
-
 
 
 .nav-justified{
@@ -17,8 +16,7 @@
 }
 
 .nav > li {
-    max-height: 20px;
-    width:33%;
+    width:32%;
     float:left;
 }
 
