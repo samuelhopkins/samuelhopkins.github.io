@@ -57,7 +57,7 @@
     background:url('/img/SharksRainbowDark.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100% 100vh;
     background-position: center center;
     font-size: 0.7em;
 }
@@ -82,7 +82,7 @@
     background-size: cover;
     background-position: center center; 
     padding-bottom: 80%;
-    margin-bottom: 40px;
+    margin-bottom: 40%;
 }
 
 .hsContent 
