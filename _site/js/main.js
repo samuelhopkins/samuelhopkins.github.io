@@ -1,6 +1,6 @@
  var isMobile = null;
  $(document).ready(function(){
-	var s = skrollr.init();
+	var s = skrollr.init({constants: {mobileTop: 20}});
     isMobile = window.matchMedia("only screen and (max-width: 760px)");
 
     $("html").niceScroll({

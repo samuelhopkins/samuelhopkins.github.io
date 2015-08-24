@@ -16,7 +16,7 @@
 }
 
 .nav > li {
-    width:32%;
+    width:30%;
     float:left;
 }
 
@@ -59,6 +59,10 @@
     background-size: 100% 100%;
     background-position: center center;
     font-size: 0.7em;
+}
+
+.tahoe > .hsContent{
+    top:20vh;
 }
 
 .cap
