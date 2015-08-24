@@ -61,20 +61,16 @@ $(function () {
         //detected a scroll event, you want to minimize the code here because this event can be thrown A LOT!
         didScroll = true;
     });
-
+    if (isMobile.matches){
+        createMobileChart();
+                }
     //check every 250ms if user has scrolled to the skills section
     setInterval(function () {
         if (didScroll) {
             didScroll = false;
-            if (isMobile.matches){
-                    createMobileChart();
-                }
             if ($window.scrollTop() >= skillsTop) {
-                if (isMobile.matches){
-                    createMobileChart();
-                }
-                else{
-                    createChart();
+                if (!isMobile.matches){
+                     createChart();
                 }
             }
         }
