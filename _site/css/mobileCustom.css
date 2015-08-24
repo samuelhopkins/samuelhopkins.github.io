@@ -10,12 +10,16 @@
     font-size: 0.9em;
 }
 
-.nav > li {
-    max-height: 20px;
-}
+
 
 .nav-justified{
-    width: 33%;
+    float:none;
+}
+
+.nav > li {
+    max-height: 20px;
+    width:33%;
+    float:left;
 }
 
 .img-responsive{
