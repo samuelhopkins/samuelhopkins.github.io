@@ -1,5 +1,7 @@
+ var isMobile = null;
  $(document).ready(function(){
 	var s = skrollr.init();
+    isMobile = window.matchMedia("only screen and (max-width: 760px)");
 
     $("html").niceScroll({
     	cursorcolor: "#0000",
@@ -42,11 +44,15 @@ $("#contact-link").click(function() {
 
 });
 
+
+
 $(function () {
     var $window = $(window),
         didScroll = false,
         skillsTop = $('#skills').offset().top - 400; //the point at which we will create the chart
-
+    if (isMobile.matches) {
+        skillsTop = 0;
+    }
     $window.on('scroll', function () {
         //detected a scroll event, you want to minimize the code here because this event can be thrown A LOT!
         didScroll = true;
