@@ -32,7 +32,7 @@ $("#projects").click(function() {
 var offSet = 300;
 if (width <= 600)
 {
-    offSet = 0;
+    offSet = 50;
 }
 $("#contact").click(function() {
     $('html, body').animate({
