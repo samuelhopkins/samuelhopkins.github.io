@@ -158,6 +158,18 @@ ul.contact-list
 	    margin: 0 0 0 4em;
 }
 
+.capria-image{
+    position: relative;
+    height: 50px;
+    margin-top: 7px;
+    left: -15px;
+}
+
+.capria-content{
+    position: relative;
+    top: -30px;
+}
+
 .belvedere-image
 {
 	position: relative;
