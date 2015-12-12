@@ -51,8 +51,8 @@
     height:100%;
 }
 
-.tahoe 
-{   
+.tahoe
+{
     min-height: 100vh;
     background:url('/img/SharksRainbowDark.jpg');
     background-repeat: no-repeat;
@@ -69,10 +69,9 @@
 .cap
 {
     background:url('/img/CapitolaDark.jpg');
-    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    background-position: center center; 
+    background-position: center center;
 }
 
 .gate
@@ -80,12 +79,12 @@
     background:url('/img/GoldenGateDarker.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center; 
+    background-position: center center;
     padding-bottom: 80%;
     margin-bottom: 40%;
 }
 
-.hsContent 
+.hsContent
 {
     width:100%;
     display: inline-block;
@@ -97,7 +96,7 @@
 {
     margin: 0 10%;
 }
-p 
+p
 {
     font-family: 'Raleway', sans-serif;
     width: 90%;
@@ -239,7 +238,7 @@ ul.contact-list
 .about{
     color:#655757;
     font-size: 1.2em;
-}   
+}
 
 h1.sam
 {
