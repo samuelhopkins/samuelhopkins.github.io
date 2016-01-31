@@ -131,12 +131,11 @@ $(function () {
             name: 'Percentage of time spent programming with',
             innerSize: '40%',
             data: [
-            	['Python',  25.00],
+            	['Ruby',  25.00],
+                ['Python', 25.00],
                 ['Javascript',  20.00],
-                ['HTML/CSS', 15.00],
-                ['Swift',   15.00],
-                ['C', 15.00],
-                ['Ruby', 10.00],
+                ['C', 20.00],
+                ['Swift', 10.00]
                 
                 
             ]

@@ -164,6 +164,13 @@ ul.contact-list
     left: -15px;
 }
 
+.buildzoom-image{
+    position: relative;
+    height: 60px;
+    margin-top: 7px;
+    left: -15px;
+}
+
 .capria-content{
     position: relative;
     top: -30px;
@@ -288,13 +295,28 @@ h4{
 }
 ul.duty
 {
-	color:#F13D3D;
+	color:#CC1717;
 	width: 80%;
 }
 
 .duty>li{
 	font-size: 1.2em;
 	line-height: 1.9em;
+}
+
+h5.time{
+	color: #CCCCCC;
+	float: right;
+	margin-right: 20%;
+}
+
+.tight{
+	margin-top: -14px;
+}
+
+.job{
+	float:left;
+	margin-left: 15px;
 }
 
 .heading{
