@@ -4,13 +4,6 @@
     isMobile = window.matchMedia("only screen and (max-width: 760px)");
     var width = $(window).width();
     console.log("width is "+width);
-    $("html").niceScroll({
-    	cursorcolor: "#0000",
-    	cursorwidth: "8px",
-    	scrollspeed: 100,
-    	cursorborderradius: "0px"
-    });
-	
 
 $("#about").click(function() {
     $('html, body').animate({
